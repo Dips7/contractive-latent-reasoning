@@ -148,13 +148,19 @@ def set_cell_borders(cell, top=None, bottom=None, left=None, right=None):
     tcPr.append(tcBorders)
 
 
-def style_document(doc):
+def style_document(doc, line_numbers=False):
     """Applies clean academic styling (Times New Roman, 1-inch margins)."""
     for section in doc.sections:
         section.top_margin = Inches(1.0)
         section.bottom_margin = Inches(1.0)
         section.left_margin = Inches(1.0)
         section.right_margin = Inches(1.0)
+        if line_numbers:
+            sectPr = section._sectPr
+            lnNumType = OxmlElement("w:lnNumType")
+            lnNumType.set(qn("w:countBy"), "1")
+            lnNumType.set(qn("w:restart"), "continuous")
+            sectPr.append(lnNumType)
         
     style_normal = doc.styles['Normal']
     font = style_normal.font
@@ -262,24 +268,24 @@ def build_cover_letter():
     style_document(doc)
 
     add_p(doc, "September 26, 2026", space_after=12)
-    add_p(doc, "To:\nThe Editor-in-Chief,\nJournal Submission Office", space_after=12)
+    add_p(doc, "To:\nThe Editors-in-Chief,\nNeural Networks (Elsevier)\nOfficial Journal of the International Neural Network Society (INNS), ENNS, & JNNS", space_after=12)
 
-    add_p(doc, "Subject: Submission of Original Research Article titled \"Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction\"", bold_prefix="Dear Editor-in-Chief,\n\n", space_after=10)
+    add_p(doc, "Subject: Submission of Original Research Article titled \"Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction\"", bold_prefix="Dear Editors-in-Chief,\n\n", space_after=10)
 
-    add_p(doc, "We are pleased to submit our original research article titled \"Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction\" for consideration for publication in your prestigious journal.")
+    add_p(doc, "We are pleased to submit our original research article titled \"Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction\" for consideration for publication as a Regular Paper in Neural Networks.")
 
-    add_p(doc, r"This work addresses a primary bottleneck in modern reasoning architectures: the error compounding, quadratic memory overhead, and runaway drift inherent to discrete autoregressive Chain-of-Thought (CoT) token generation. We introduce Contractive Latent Dynamical Reasoning (CLR), a continuous-time framework that formulates multi-step reasoning as an algebraically constrained dynamical system evolving in continuous latent space. By establishing strict Demidovich contraction ($\lambda_{\max}(\text{Sym}(J)) \le -\kappa < 0$), CLR mathematically guarantees exponential convergence to a unique problem-conditioned equilibrium.")
+    add_p(doc, r"Why this work is ideally suited for Neural Networks: Neural Networks has long served as the premier venue for foundational breakthroughs bridging non-linear dynamical systems, neurocomputing, and recurrent architectures. Our paper tackles a defining challenge in frontier AI: the compounding error drift, quadratic context overhead, and unconstrained hallucinations inherent to discrete autoregressive Chain-of-Thought (CoT) token rollouts. We formulate multi-step reasoning as a continuous-time dynamical system evolving on a latent manifold under strict Demidovich contraction ($\lambda_{\max}(\text{Sym}(J)) \le -\kappa < 0$). This guarantees exponential convergence to a unique problem-conditioned equilibrium, enabling smooth continuous test-time scaling.")
 
     add_p(doc, "Key scientific and empirical findings presented in this manuscript include:")
     
-    add_p(doc, "1. Formal Expressivity Boundary: We prove why damped Input-Convex Neural Network (ICNN) potential flows fail on non-convex combinatorial parity (verifying our pre-registered kill criterion at chance), and demonstrate how spectrally normalized non-potential flows resolve this tension.", space_after=4)
+    add_p(doc, "1. Formal Expressivity Boundary: We prove why damped Input-Convex Neural Network (ICNN) potential flows fail on non-convex combinatorial parity (verifying our pre-registered kill criterion at chance), and demonstrate how spectrally bounded non-potential flows resolve this expressivity-contraction trade-off.", space_after=4)
     add_p(doc, r"2. Real-World Benchmark Superiority: On the Cora citation network (2,708 papers, 5,429 citations), CLR achieves 100.00% multi-hop reachability, decisively outperforming discrete Graph Neural Networks ($K \in \{2, 4, 6, 8\}$) where discrete depth saturation and over-smoothing limit accuracy to 87.67% ($K=6$) and 86.67% ($K=8$).", space_after=4)
-    add_p(doc, "3. Physical Refutation of Self-Healing: Under a unified numerical harness, we refute naive claims of 'self-healing' under global additive noise on graphs, revealing the exact log-norm energy floor mechanism responsible for threshold crossing.", space_after=4)
-    add_p(doc, "4. Large-Scale Numerical Verification: We design an autograd-based shifted power iteration that verifies Demidovich contraction across all 43,328 dimensions in 0.22 seconds.", space_after=10)
+    add_p(doc, "3. Physical Refutation of Self-Healing: Under a unified numerical integration harness, we refute naive claims of 'self-healing' under global additive noise on graphs, revealing the exact log-norm energy floor mechanism responsible for threshold crossing.", space_after=4)
+    add_p(doc, "4. Large-Scale Numerical Verification: We introduce an autograd-based shifted power iteration that verifies Demidovich contraction across all 43,328 dimensions in 0.22 seconds.", space_after=10)
 
-    add_p(doc, "This manuscript represents original work and is not currently under consideration for publication elsewhere. All authors (Dipesh Gurung, Binod Bhattarai, and Dr. R N Thakur) have read, contributed to, and approved the final submitted version. The complete submission package comprises the Cover Letter, Title Page, Highlights, Full Manuscript, and comprehensive Supplementary Material document detailing mathematical proofs, the 43,328-dimension shifted power iteration algorithm, complete hyperparameter configurations, and zero-leakage dataset protocols. Source code, test suites (24 passed unit tests), and model checkpoints are publicly available at: https://github.com/Dips7/contractive-latent-reasoning.")
+    add_p(doc, "This manuscript represents original work and is not currently under consideration for publication elsewhere. All authors (Dipesh Gurung, Binod Bhattarai, and Dr. R N Thakur) have read, contributed to, and approved the submitted version. The complete submission package comprises the Cover Letter, Title Page, Highlights (strictly <= 85 characters per bullet), Full Manuscript (with continuous line numbering), Standalone Supplementary Material, Declaration of Competing Interests, and CRediT Author Statement. Complete source code, test suites (24 passed unit tests), and model checkpoints are publicly available at: https://github.com/Dips7/contractive-latent-reasoning.")
 
-    add_p(doc, "Thank you very much for your time, consideration, and handling of our manuscript. We look forward to hearing from you.")
+    add_p(doc, "Thank you very much for your time, consideration, and handling of our manuscript. We look forward to the peer review process.")
 
     add_p(doc, "Sincerely,\n\nDipesh Gurung (Corresponding Author)\nDepartment of Information Technology\nLord Buddha Education Foundation, Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np | Tel: +977-1-4424412\nORCID: 0009-0009-0335-2267", space_after=0)
 
@@ -379,12 +385,13 @@ def build_highlights():
     add_h1(doc, "Research Highlights")
     add_p(doc, "Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction", italic=True, space_after=14)
 
+    # Strictly <= 85 characters including spaces per Elsevier Neural Networks guidelines
     highlights = [
-        "Continuous latent dynamical reasoning bypasses compounding discrete autoregressive token drift.",
-        "Demidovich contraction mathematically guarantees exponential convergence to a unique fixed point.",
-        "Damped ICNN potential flows fail on parity, establishing an expressivity-contraction boundary.",
-        "Non-potential relational flows achieve 100.00% reachability on Cora, beating discrete GNN saturation.",
-        "Additive background noise fills the near-zero energy floor, refuting naive self-healing on graphs."
+        "Continuous latent reasoning bypasses discrete autoregressive token drift.",
+        "Demidovich contraction guarantees exponential convergence to a unique state.",
+        "Convex potential flows fail on parity, exposing an expressivity barrier.",
+        "Non-potential neural flows achieve 100.00% reachability on citation graph.",
+        "Global additive noise fills energy floor, refuting naive graph self-healing."
     ]
 
     for h in highlights:
@@ -405,7 +412,7 @@ def build_highlights():
 # -----------------------------------------------------------------------------
 def build_manuscript():
     doc = docx.Document()
-    style_document(doc)
+    style_document(doc, line_numbers=True)
 
     # Title
     p_title = doc.add_paragraph()
@@ -855,14 +862,90 @@ def build_supplementary():
     print(f"Saved: {out_path}")
 
 
+# -----------------------------------------------------------------------------
+# 6. BUILD STANDALONE DECLARATION OF COMPETING INTERESTS (ELSEVIER ITEM)
+# -----------------------------------------------------------------------------
+def build_competing_interests():
+    doc = docx.Document()
+    style_document(doc)
+
+    add_h1(doc, "Declaration of Competing Interests")
+    add_p(doc, "Target Journal: Neural Networks (Elsevier)", italic=True, space_after=8)
+    add_p(doc, "Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction", bold_prefix="Manuscript Title: ", space_after=6)
+    add_p(doc, "Dipesh Gurung, Binod Bhattarai, Dr. R N Thakur", bold_prefix="Authors: ", space_after=14)
+
+    add_p(doc, "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.")
+
+    add_p(doc, "Declaration Checklist & Confirmation:", bold_prefix="Confirmation: ", space_after=6)
+    add_p(doc, "1. Financial Interests: None. No funding, honoraria, consultancy fees, grants, or stock ownership in entities whose financial interests could be affected by this research.", space_after=4)
+    add_p(doc, "2. Personal & Professional Relationships: None. The authors maintain no personal or professional affiliations that biased the study design, empirical benchmarking, or data interpretation.", space_after=4)
+    add_p(doc, "3. Intellectual Property: No patents or proprietary claims exist that conflict with the full public release of our codebase and benchmark datasets.", space_after=16)
+
+    add_p(doc, "Signed on behalf of all authors:\n\nDipesh Gurung (Corresponding Author)\nAssistant Professor, Department of Information Technology\nLord Buddha Education Foundation, Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np\nDate: September 26, 2026", space_after=0)
+
+    out_path = PKG_DIR / "06_Declaration_of_Competing_Interests.docx"
+    doc.save(out_path)
+    print(f"Saved: {out_path}")
+
+
+# -----------------------------------------------------------------------------
+# 7. BUILD STANDALONE CRediT AUTHOR STATEMENT (ELSEVIER ITEM)
+# -----------------------------------------------------------------------------
+def build_credit_statement():
+    doc = docx.Document()
+    style_document(doc)
+
+    add_h1(doc, "CRediT Author Statement")
+    add_p(doc, "Target Journal: Neural Networks (Elsevier)", italic=True, space_after=8)
+    add_p(doc, "Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction", bold_prefix="Manuscript Title: ", space_after=14)
+
+    add_p(doc, "Dipesh Gurung: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing - Original Draft, Visualization, Project Administration.", bold_prefix="Dipesh Gurung: ", space_after=8)
+    add_p(doc, "Binod Bhattarai: Validation, Formal Analysis, Mathematical Verification, Writing - Review & Editing.", bold_prefix="Binod Bhattarai: ", space_after=8)
+    add_p(doc, "Dr. R N Thakur: Supervision, Resources, Methodological Governance, Writing - Review & Editing, Final Approval.", bold_prefix="Dr. R N Thakur: ", space_after=16)
+
+    add_p(doc, "All authors have read and approved the published version of the manuscript and accept full scientific accountability for its content.", italic=True)
+
+    out_path = PKG_DIR / "07_CRediT_Author_Statement.docx"
+    doc.save(out_path)
+    print(f"Saved: {out_path}")
+
+
+# -----------------------------------------------------------------------------
+# 8. EXPORT STANDALONE FIGURES FOR ELSEVIER PORTAL
+# -----------------------------------------------------------------------------
+def export_figures_for_elsevier():
+    """Copies publication figures with Elsevier standard naming to submission_package/figures/."""
+    import shutil
+    target_fig_dir = PKG_DIR / "figures"
+    target_fig_dir.mkdir(parents=True, exist_ok=True)
+    
+    mapping = {
+        "fig1_depth_vs_horizon": "Figure_1",
+        "fig2_hop_breakdown": "Figure_2",
+        "fig3_noise_floor_refutation": "Figure_3",
+        "fig4_trajectory_contraction": "Figure_4"
+    }
+    
+    for src_base, dst_base in mapping.items():
+        for ext in [".png", ".pdf"]:
+            src_file = FIG_DIR / f"{src_base}{ext}"
+            dst_file = target_fig_dir / f"{dst_base}{ext}"
+            if src_file.exists():
+                shutil.copy2(src_file, dst_file)
+                print(f"Exported: {dst_file}")
+
+
 def main():
-    print("Building Submission Package with Standardized OMML Equations...")
+    print("Building Submission Package for Neural Networks (Elsevier)...")
     build_cover_letter()
     build_title_page()
     build_highlights()
     build_manuscript()
     build_supplementary()
-    print("\n[Package Complete] All 5 submission documents successfully built in submission_package/")
+    build_competing_interests()
+    build_credit_statement()
+    export_figures_for_elsevier()
+    print("\n[Package Complete] Complete Elsevier Neural Networks submission package successfully generated in submission_package/")
 
 
 if __name__ == "__main__":
