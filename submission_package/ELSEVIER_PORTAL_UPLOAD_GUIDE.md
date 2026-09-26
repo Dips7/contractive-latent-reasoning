@@ -30,13 +30,27 @@ In the Elsevier submission system, select the corresponding **Item Type** dropdo
 - **Article Type**: *Original Research Article* / *Regular Paper*
 - **Section / Category**: *Theory and Architecture* / *Deep Learning & Dynamical Systems*
 - **Corresponding Author**:
-  - Name: **Dipesh Gurung**
-  - Email: `dipesh.gurung@lbef.edu.np` / `dips.grg7@gmail.com`
-  - Institution: *Lord Buddha Education Foundation (LBEF Campus), Kathmandu, Nepal*
+  - Name: **Dipesh Gurung, M.Sc.**
+  - Role / Position: **Research Associate**
+  - Department: **Research Department**
+  - Institution: **Lord Buddha Education Foundation (LBEF Campus)**
+  - Address: **Opposite to Maitidevi Temple, Kathmandu 44600, Nepal**
+  - Email: `dipesh.gurung@lbef.edu.np` (Primary) / `dips.grg7@gmail.com`
+  - Telephone: `+977-1-4424412`
   - ORCID: `0009-0009-0335-2267`
 - **Co-Authors**:
-  - **Binod Bhattarai**: *Noida International University, Greater Noida, India* (Email: `binod25@gmail.com`, ORCID: `0009-0006-6691-5264`)
-  - **Dr. R N Thakur** (*Prof. Dr. R.N. Thakur*): *Lord Buddha Education Foundation, Kathmandu, Nepal* (Email: `rn.thakur@lbef.edu.np`)
+  - **Binod Bhattarai**:
+    - Role / Position: **Ph.D. Scholar**
+    - Department: **Department of Computer Science and Engineering, School of Sciences**
+    - Institution: **Noida International University (NIU), Greater Noida, Uttar Pradesh 203201, India**
+    - Email: `binod25@gmail.com`
+    - ORCID: `0009-0006-6691-5264`
+  - **Prof. Dr. R.N. Thakur**:
+    - Role / Position: **Dean, Academics**
+    - Department: **Academics**
+    - Institution: **Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal**
+    - Email: `rn.thakur@lbef.edu.np`
+    - ORCID: `0000-0003-3911-4358`
 
 ---
 

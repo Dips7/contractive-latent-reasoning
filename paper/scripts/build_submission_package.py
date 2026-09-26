@@ -5,7 +5,7 @@ Build Publication Submission Package for:
 Authors:
 - Dipesh Gurung (Corresponding Author: dipesh.gurung@lbef.edu.np)
 - Binod Bhattarai (binod25@gmail.com)
-- Dr. R N Thakur (rn.thakur@lbef.edu.np)
+- Prof. Dr. R.N. Thakur (rn.thakur@lbef.edu.np)
 
 Outputs generated in submission_package/:
 1. 01_Cover_Letter.docx
@@ -283,11 +283,11 @@ def build_cover_letter():
     add_p(doc, "3. Physical Refutation of Self-Healing: Under a unified numerical integration harness, we refute naive claims of 'self-healing' under global additive noise on graphs, revealing the exact log-norm energy floor mechanism responsible for threshold crossing.", space_after=4)
     add_p(doc, "4. Large-Scale Numerical Verification: We introduce an autograd-based shifted power iteration that verifies Demidovich contraction across all 43,328 dimensions in 0.22 seconds.", space_after=10)
 
-    add_p(doc, "This manuscript represents original work and is not currently under consideration for publication elsewhere. All authors (Dipesh Gurung, Binod Bhattarai, and Dr. R N Thakur) have read, contributed to, and approved the submitted version. The complete submission package comprises the Cover Letter, Title Page, Highlights (strictly <= 85 characters per bullet), Full Manuscript (with continuous line numbering), Standalone Supplementary Material, Declaration of Competing Interests, and CRediT Author Statement. Complete source code, test suites (24 passed unit tests), and model checkpoints are publicly available at: https://github.com/Dips7/contractive-latent-reasoning.")
+    add_p(doc, "This manuscript represents original work and is not currently under consideration for publication elsewhere. All authors (Dipesh Gurung, Binod Bhattarai, and Prof. Dr. R.N. Thakur) have read, contributed to, and approved the submitted version. The complete submission package comprises the Cover Letter, Title Page, Highlights (strictly <= 85 characters per bullet), Full Manuscript (with continuous line numbering), Standalone Supplementary Material, Declaration of Competing Interests, and CRediT Author Statement. Complete source code, test suites (24 passed unit tests), and model checkpoints are publicly available at: https://github.com/Dips7/contractive-latent-reasoning.")
 
     add_p(doc, "Thank you very much for your time, consideration, and handling of our manuscript. We look forward to the peer review process.")
 
-    add_p(doc, "Sincerely,\n\nDipesh Gurung (Corresponding Author)\nDepartment of Information Technology\nLord Buddha Education Foundation, Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np | Tel: +977-1-4424412\nORCID: 0009-0009-0335-2267", space_after=0)
+    add_p(doc, "Sincerely,\n\nDipesh Gurung, M.Sc. (Corresponding Author)\nResearch Associate, Research Department\nLord Buddha Education Foundation (LBEF Campus)\nOpposite to Maitidevi Temple, Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np (Primary) / dips.grg7@gmail.com | Tel: +977-1-4424412\nORCID: 0009-0009-0335-2267", space_after=0)
 
     out_path = PKG_DIR / "01_Cover_Letter.docx"
     doc.save(out_path)
@@ -325,19 +325,20 @@ def build_title_page():
     r2.font.name = "Times New Roman"
     p_auth.add_run("2,\t").font.name = "Times New Roman"
     
-    r3 = p_auth.add_run("Dr. R N Thakur")
+    r3 = p_auth.add_run("Prof. Dr. R.N. Thakur")
     r3.bold = True
     r3.font.name = "Times New Roman"
     p_auth.add_run("1").font.name = "Times New Roman"
 
     # Affiliations
-    add_p(doc, "1 Department of Information Technology, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Engineering and Technology, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=18)
+    add_p(doc, "1 Research Department, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Sciences, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=18)
 
     # Corresponding Author Box
     add_h2(doc, "Corresponding Author Details")
-    add_p(doc, "Dipesh Gurung", bold_prefix="Full Name: ", space_after=2)
-    add_p(doc, "Assistant Professor & Researcher", bold_prefix="Academic Position: ", space_after=2)
-    add_p(doc, "Department of Information Technology, Lord Buddha Education Foundation (LBEF Campus)", bold_prefix="Department / Faculty: ", space_after=2)
+    add_p(doc, "Dipesh Gurung, M.Sc.", bold_prefix="Full Name: ", space_after=2)
+    add_p(doc, "Research Associate", bold_prefix="Academic Position: ", space_after=2)
+    add_p(doc, "Research Department", bold_prefix="Department: ", space_after=2)
+    add_p(doc, "Lord Buddha Education Foundation (LBEF Campus)", bold_prefix="Institution: ", space_after=2)
     add_p(doc, "Opposite to Maitidevi Temple, Kathmandu 44600, Nepal", bold_prefix="Postal Address: ", space_after=2)
     add_p(doc, "dipesh.gurung@lbef.edu.np (Primary) / dips.grg7@gmail.com", bold_prefix="E-mail: ", space_after=2)
     add_p(doc, "+977-1-4424412", bold_prefix="Telephone: ", space_after=2)
@@ -345,8 +346,8 @@ def build_title_page():
 
     # Co-Author Details
     add_h2(doc, "Co-Author Credentials & ORCIDs")
-    add_p(doc, "Binod Bhattarai, Assistant Professor & Ph.D. Candidate, Noida International University, India. Email: binod25@gmail.com. ORCID: 0009-0006-6691-5264.", bold_prefix="Binod Bhattarai: ", space_after=3)
-    add_p(doc, "Prof. Dr. R.N. Thakur, Professor & Dean, Lord Buddha Education Foundation, Kathmandu, Nepal. Email: rn.thakur@lbef.edu.np.", bold_prefix="Dr. R N Thakur: ", space_after=14)
+    add_p(doc, "Binod Bhattarai, Ph.D. Scholar, Department of Computer Science and Engineering, School of Sciences, Noida International University (NIU), Greater Noida, Uttar Pradesh 203201, India. Email: binod25@gmail.com. ORCID: 0009-0006-6691-5264.", bold_prefix="Binod Bhattarai: ", space_after=3)
+    add_p(doc, "Prof. Dr. R.N. Thakur, Dean, Academics, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal. Email: rn.thakur@lbef.edu.np. ORCID: 0000-0003-3911-4358.", bold_prefix="Prof. Dr. R.N. Thakur: ", space_after=14)
 
     # Abstract (exact 1 paragraph, ~196 words)
     add_h2(doc, "Abstract")
@@ -428,11 +429,11 @@ def build_manuscript():
     p_auth = doc.add_paragraph()
     p_auth.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_auth.paragraph_format.space_after = Pt(4)
-    r = p_auth.add_run("Dipesh Gurung1,*, Binod Bhattarai2, Dr. R N Thakur1")
+    r = p_auth.add_run("Dipesh Gurung1,*, Binod Bhattarai2, Prof. Dr. R.N. Thakur1")
     r.bold = True
     r.font.name = "Times New Roman"
 
-    add_p(doc, "1 Department of Information Technology, Lord Buddha Education Foundation, Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Engineering and Technology, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
+    add_p(doc, "1 Research Department, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Sciences, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
 
     # Abstract Box
     add_h2(doc, "Abstract")
@@ -635,7 +636,7 @@ def build_manuscript():
     # Declarations Section
     add_h1(doc, "Declarations & Compliance Statements")
     
-    add_p(doc, "Dipesh Gurung: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing - Original Draft, Visualization, Project Administration. Binod Bhattarai: Validation, Formal Analysis, Mathematical Verification, Writing - Review & Editing. Dr. R N Thakur: Supervision, Resources, Methodological Governance, Writing - Review & Editing, Final Approval.", bold_prefix="Author Contributions (CRediT): ", space_after=8)
+    add_p(doc, "Dipesh Gurung: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing – original draft, Visualization, Project administration. Binod Bhattarai: Conceptualization, Investigation, Validation, Writing – review & editing, Supervision. Prof. Dr. R.N. Thakur: Conceptualization, Supervision, Methodology, Resources, Writing – review & editing.", bold_prefix="Author Contributions (CRediT): ", space_after=8)
 
     add_p(doc, "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.", bold_prefix="Declaration of Competing Interests: ", space_after=8)
 
@@ -695,11 +696,11 @@ def build_supplementary():
     p_auth = doc.add_paragraph()
     p_auth.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_auth.paragraph_format.space_after = Pt(4)
-    r = p_auth.add_run("Dipesh Gurung1,*, Binod Bhattarai2, Dr. R N Thakur1")
+    r = p_auth.add_run("Dipesh Gurung1,*, Binod Bhattarai2, Prof. Dr. R.N. Thakur1")
     r.bold = True
     r.font.name = "Times New Roman"
 
-    add_p(doc, "1 Department of Information Technology, Lord Buddha Education Foundation, Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Engineering and Technology, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=16)
+    add_p(doc, "1 Research Department, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal\n2 Department of Computer Science and Engineering, School of Sciences, Noida International University, Greater Noida, Uttar Pradesh 203201, India\n* Corresponding Author: dipesh.gurung@lbef.edu.np", align=WD_ALIGN_PARAGRAPH.CENTER, space_after=16)
 
     # Section S1
     add_h1(doc, "Section S1: Extended Mathematical Proofs & Theoretical Derivations")
@@ -872,7 +873,7 @@ def build_competing_interests():
     add_h1(doc, "Declaration of Competing Interests")
     add_p(doc, "Target Journal: Neural Networks (Elsevier)", italic=True, space_after=8)
     add_p(doc, "Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction", bold_prefix="Manuscript Title: ", space_after=6)
-    add_p(doc, "Dipesh Gurung, Binod Bhattarai, Dr. R N Thakur", bold_prefix="Authors: ", space_after=14)
+    add_p(doc, "Dipesh Gurung, Binod Bhattarai, Prof. Dr. R.N. Thakur", bold_prefix="Authors: ", space_after=14)
 
     add_p(doc, "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.")
 
@@ -881,7 +882,7 @@ def build_competing_interests():
     add_p(doc, "2. Personal & Professional Relationships: None. The authors maintain no personal or professional affiliations that biased the study design, empirical benchmarking, or data interpretation.", space_after=4)
     add_p(doc, "3. Intellectual Property: No patents or proprietary claims exist that conflict with the full public release of our codebase and benchmark datasets.", space_after=16)
 
-    add_p(doc, "Signed on behalf of all authors:\n\nDipesh Gurung (Corresponding Author)\nAssistant Professor, Department of Information Technology\nLord Buddha Education Foundation, Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np\nDate: September 26, 2026", space_after=0)
+    add_p(doc, "Signed on behalf of all authors:\n\nDipesh Gurung, M.Sc. (Corresponding Author)\nResearch Associate, Research Department\nLord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal\nEmail: dipesh.gurung@lbef.edu.np (Primary) / dips.grg7@gmail.com\nDate: September 26, 2026", space_after=0)
 
     out_path = PKG_DIR / "06_Declaration_of_Competing_Interests.docx"
     doc.save(out_path)
@@ -899,9 +900,9 @@ def build_credit_statement():
     add_p(doc, "Target Journal: Neural Networks (Elsevier)", italic=True, space_after=8)
     add_p(doc, "Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction", bold_prefix="Manuscript Title: ", space_after=14)
 
-    add_p(doc, "Dipesh Gurung: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing - Original Draft, Visualization, Project Administration.", bold_prefix="Dipesh Gurung: ", space_after=8)
-    add_p(doc, "Binod Bhattarai: Validation, Formal Analysis, Mathematical Verification, Writing - Review & Editing.", bold_prefix="Binod Bhattarai: ", space_after=8)
-    add_p(doc, "Dr. R N Thakur: Supervision, Resources, Methodological Governance, Writing - Review & Editing, Final Approval.", bold_prefix="Dr. R N Thakur: ", space_after=16)
+    add_p(doc, "Dipesh Gurung: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing – original draft, Visualization, Project administration.", bold_prefix="Dipesh Gurung: ", space_after=8)
+    add_p(doc, "Binod Bhattarai: Conceptualization, Investigation, Validation, Writing – review & editing, Supervision.", bold_prefix="Binod Bhattarai: ", space_after=8)
+    add_p(doc, "Prof. Dr. R.N. Thakur: Conceptualization, Supervision, Methodology, Resources, Writing – review & editing.", bold_prefix="Prof. Dr. R.N. Thakur: ", space_after=16)
 
     add_p(doc, "All authors have read and approved the published version of the manuscript and accept full scientific accountability for its content.", italic=True)
 

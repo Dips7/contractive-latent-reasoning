@@ -1,9 +1,9 @@
 # Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Operator-Norm Contraction
 
-**Authors**: Dipesh Gurung$^{1,*}$, Binod Bhattarai$^2$, Dr. R N Thakur$^1$  
-$^1$ Department of Information Technology, Lord Buddha Education Foundation, Kathmandu 44600, Nepal  
-$^2$ Department of Computer Science and Engineering, School of Engineering and Technology, Noida International University, Greater Noida, Uttar Pradesh 203201, India  
-$^*$ Corresponding Author: `dipesh.gurung@lbef.edu.np` | Tel: +977-1-4424412 | ORCID: 0009-0009-0335-2267  
+**Authors**: Dipesh Gurung$^{1,*}$, Binod Bhattarai$^2$, Prof. Dr. R.N. Thakur$^1$  
+$^1$ Research Department, Lord Buddha Education Foundation (LBEF Campus), Kathmandu 44600, Nepal  
+$^2$ Department of Computer Science and Engineering, School of Sciences, Noida International University, Greater Noida, Uttar Pradesh 203201, India  
+$^*$ Corresponding Author: `dipesh.gurung@lbef.edu.np` | Tel: +977-1-4424412 | ORCID: [0009-0009-0335-2267](https://orcid.org/0009-0009-0335-2267)  
 **Date**: September 2026  
 
 ---
@@ -240,9 +240,9 @@ The authors declare that they have no known competing financial interests, perso
 
 ## Author Contributions (CRediT)
 
-- **Dipesh Gurung**: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing - Original Draft, Visualization, Project Administration.
-- **Binod Bhattarai**: Validation, Formal Analysis, Mathematical Verification, Writing - Review & Editing.
-- **Dr. R N Thakur**: Supervision, Resources, Methodological Governance, Writing - Review & Editing, Final Approval.
+- **Dipesh Gurung**: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing – original draft, Visualization, Project administration.
+- **Binod Bhattarai**: Conceptualization, Investigation, Validation, Writing – review & editing, Supervision.
+- **Prof. Dr. R.N. Thakur**: Conceptualization, Supervision, Methodology, Resources, Writing – review & editing.
 
 ---
 
