@@ -133,7 +133,7 @@ In accordance with our pre-registered falsification protocol, we benchmarked App
 ---
 
 ### 4.2 Real-World Benchmark: Cora Academic Citation Network
-We evaluate multi-hop reachability on the Cora academic network:
+We evaluate multi-hop reachability on the Cora academic network (Sen et al., 2008):
 - **Graph Statistics**: 2,708 scientific papers, 5,429 directed citation edges.
 - **Dataset Generation**: Balanced dataset of 1,200 training pairs, 300 validation pairs, and 300 test pairs (50% reachable, 50% unreachable, stratified across hops 1 to 6).
 - **Baselines**: Parameter-matched Direct Embedding MLP ($d=32$) and discrete message-passing Graph Neural Networks with $K \in \{2, 4, 6, 8\}$ layers.
@@ -214,7 +214,7 @@ Figure 4 illustrates multi-seed trajectory distance convergence over time, verif
 
 - **Implicit and Equilibrium Models**: Deep Equilibrium Models (DEQs; Bai et al., 2019) and Monotone Operator Networks (MonDEQs; Winston & Kolter, 2020) solve for fixed points using root-finding algorithms. CLR differs by integrating explicit contractive vector fields in continuous time, enabling test-time compute scaling via horizon elongation.
 - **Neural ODEs & Dynamical Systems**: Neural ODEs (Chen et al., 2018) model depth as time. However, unconstrained Neural ODEs lack contraction guarantees, leading to numerical stiffness and sensitivity to perturbations.
-- **Over-Smoothing in Deep GNNs**: Stacking layers in discrete GNNs leads to over-smoothing and exponential information loss (Li et al., 2018; Rusch et al., 2022). Our results demonstrate that continuous contractive ODEs bypass discrete depth barriers, solving 6-hop queries without intermediate degradation.
+- **Continuous Graph Diffusion & Over-Smoothing in Deep GNNs**: In graph representation learning, discrete Graph Convolutional Networks (GCNs; Kipf & Welling, 2017) suffer from exponential information loss and over-smoothing as depth increases (Li et al., 2018). While continuous graph neural diffusion (GRAND; Chamberlain et al., 2021) and graph-coupled oscillator networks (GraphCON; Rusch et al., 2022) mitigate feature collapse in deep graph networks, CLR specifically introduces strict Demidovich operator-norm contraction to continuous latent reasoning. This guarantees exponential convergence to a unique problem-conditioned equilibrium, bypassing discrete depth saturation to resolve 6-hop queries without intermediate degradation.
 
 ---
 
@@ -268,10 +268,13 @@ This research received no specific grant from any funding agency in the public, 
 
 - Amos, B., Xu, L., & Kolter, J. Z. (2017). Input convex neural networks. *ICML*.
 - Bai, S., Kolter, J. Z., & Koltun, V. (2019). Deep equilibrium models. *NeurIPS*.
+- Chamberlain, B. P., Rowbottom, J., Goranova, M. I., Webb, S., Rossi, E., & Bronstein, M. M. (2021). GRAND: Graph neural diffusion. *ICML*.
 - Chen, R. T., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. (2018). Neural ordinary differential equations. *NeurIPS*.
 - Demidovich, B. P. (1961). Dissipativity of a nonlinear system of differential equations. *Vestnik Mosk. Univ.*.
+- Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. *ICLR*.
 - Li, Q., Han, Z., & Wu, X. M. (2018). Deeper insights into graph convolutional networks: An analytical perspective. *AAAI*.
 - Lohmiller, W., & Slotine, J. J. E. (1998). On contraction analysis for non-linear systems. *Automatica*.
 - Rusch, T. K., Chamberlain, B., Rowbottom, J., Mishra, S., & Bronstein, M. (2022). Graph-coupled oscillator networks. *ICML*.
+- Sen, P., Namata, G., Bilgic, M., Getoor, L., Galligher, B., & Eliassi-Rad, T. (2008). Collective classification in network data. *AI Magazine*, 29(3), 93.
 - Wei, J., Wang, X., Schuurmans, D., et al. (2022). Chain-of-thought prompting elicits reasoning in large language models. *NeurIPS*.
 - Winston, E., & Kolter, J. Z. (2020). Monotone operator equilibrium networks. *NeurIPS*.

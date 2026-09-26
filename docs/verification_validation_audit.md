@@ -1909,6 +1909,34 @@ The Contractive Latent Reasoning project has completed full rigorous verificatio
 - **Real-World Citation Network**: Cora reachability evaluated against 5 baselines ($K=2, 4, 6, 8$ GNNs and Direct MLP), proving CLR's 100.00% accuracy vs. discrete depth saturation (87.67% at $K=6$, 86.67% at $K=8$).
 - **Reproducibility**: Isolated per-model RNG seeding enforced; all checkpoints and artifacts persisted and byte-reproducible.
 
+---
+
+## 19. Submission-package V&V audit (2026-09-26) — VERDICT: SUBMITTABLE, corrected and re-verified
+
+Method: parsed all 7 .docx with python-docx, extracted all 82 OMML equations from word/document.xml, validated both
+manuscript tables cell-by-cell against `experiments/results/cora_real_world_experiment_20260926_034429.json`,
+measured all 4 figures, checked highlights lengths and line numbering. Suite re-confirmed 24 passed after rebuild.
+
+**D1 (medium) — FIXED.** Supp Table S2 intermediate σ log-norms (−20.45/−18.12) did not match the canonical artifact
+(−21.02/−18.72). Values corrected in `paper/scripts/build_submission_package.py:789-790` and
+`docs/supplementary_material.md:108-109` to −21.02 / −18.72; verified present in rebuilt
+`05_Supplementary_Material.docx` XML.
+
+**D2 — WITHDRAWN as false positive; no action taken.** The `()` seen in §4.4 sentences is a python-docx extraction
+artifact (it concatenates `w:t` runs but drops `m:t` OMML runs). At document-XML level the transition sentence is
+fully quantified inline OMML (`σ≤10−8`, `σ=10−7`, `σ≥10−6`). The build script needs no change on this count.
+
+**D3 (low) — FIXED.** Table S1 dx row now reads “16 (one-hot source impulse; 1433-dim raw Cora BoW not consumed)”
+in both sources; verified in rebuilt supplement XML.
+
+**D4 (low) — FIXED.** Sen et al. (2008) now 93–101 in `paper/references.bib` and the build script; rebuilt
+`04_Manuscript_Full.docx` XML contains “93-101”, no “93-93”.
+
+Rebuild: `build_submission_package.py` re-ran cleanly (all 7 .docx + 8 figure exports regenerated). Confirmed clean:
+highlights all ≤85 chars (73/76/72/74/76), `lnNumType` present, figures ≥1910px, all Cora table cells match the
+artifact to the digit, kill-criterion/25.0%-calibrated framing honest. Manuscript binary delta vs HEAD is −3 bytes
+(metadata-only), consistent with an unchanged-text rebuild plus the D4 reference fix.
+
 
 
 

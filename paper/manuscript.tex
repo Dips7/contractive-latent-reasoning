@@ -283,7 +283,7 @@ Strict Demidovich contraction is verified empirically on the full state space.
 
 \paragraph{Neural ODEs \& Dynamical Systems.} Neural ODEs \citep{chen2018neural} model depth as time. However, unconstrained Neural ODEs lack contraction guarantees, leading to numerical stiffness and sensitivity to perturbations.
 
-\paragraph{Over-Smoothing in Deep GNNs.} Stacking layers in discrete GNNs leads to over-smoothing and exponential information loss \citep{li2018deeper, rusch2022graph}. Our results demonstrate that continuous contractive ODEs bypass discrete depth barriers, solving 6-hop queries without intermediate degradation.
+\paragraph{Continuous Graph Diffusion \& Over-Smoothing in Deep GNNs.} In graph representation learning, discrete Graph Convolutional Networks (GCNs; \citealp{kipf2017semi}) suffer from exponential information loss and over-smoothing as network depth increases \citep{li2018deeper}. While continuous graph neural diffusion (GRAND; \citealp{chamberlain2021grand}) and graph-coupled oscillator networks (GraphCON; \citealp{rusch2022graph}) address feature collapse in deep graph models, CLR specifically introduces strict Demidovich operator-norm contraction to latent reasoning dynamics. This guarantees exponential convergence to a unique problem-conditioned equilibrium, bypassing discrete depth saturation to resolve 6-hop queries without intermediate degradation.
 
 \section{Conclusion}
 

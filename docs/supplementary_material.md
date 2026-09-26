@@ -92,7 +92,7 @@ The Cora citation graph contains 2,708 documents across 7 subject classes with 5
 | Hyperparameter / Configuration | Contractive Latent Reasoner (CLR) | Discrete GNN Baselines ($K=2..8$) |
 | :--- | :--- | :--- |
 | Latent State Dimension ($d$) | 16 | 16 |
-| Input Feature Dimension ($d_x$) | 1433 | 1433 |
+| Input Feature Dimension ($d_x$) | 16 (one-hot source impulse; 1433-dim raw Cora BoW not consumed) | 16 (one-hot source impulse; 1433-dim raw Cora BoW not consumed) |
 | Numerical Integrator | Explicit 4th-Order Runge-Kutta (RK4) | Discrete Layer Stacking ($K$ hops) |
 | Integration Horizon ($T$) | 4.0 (scaling to 16.0) | Fixed $K \in \{2, 4, 6, 8\}$ |
 | Integration Step Size ($dt$) | 0.1667 (24 integration steps) | N/A (discrete) |
@@ -105,8 +105,8 @@ The Cora citation graph contains 2,708 documents across 7 subject classes with 5
 | Noise Scale ($\sigma$) | Test Accuracy | Predicted Unreachable % | Reachable State Log-Norm | Unreachable State Log-Norm |
 | :---: | :---: | :---: | :---: | :---: |
 | 0.0 (Clean) | 100.00% | 50.0% | -8.91 | -27.63 |
-| $10^{-8}$ | 100.00% | 50.0% | -8.91 | -20.45 |
-| $10^{-7}$ | 92.67% | 42.7% | -8.90 | -18.12 |
+| $10^{-8}$ | 100.00% | 50.0% | -8.91 | -21.02 |
+| $10^{-7}$ | 92.67% | 42.7% | -8.91 | -18.72 |
 | $10^{-6}$ | 50.00% | 0.0% | -8.89 | -16.40 |
 | $10^{-5}$ | 50.00% | 0.0% | -8.82 | -14.15 |
 | $10^{-4}$ | 50.00% | 0.0% | -8.45 | -11.89 |

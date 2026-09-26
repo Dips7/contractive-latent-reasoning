@@ -536,7 +536,7 @@ def build_manuscript():
     add_p(doc, "Table 1: Synthetic Algorithmic Suite Performance and Protocol Audit Verdicts.", italic=True, space_after=12)
 
     add_h2(doc, "4.2 Real-World Benchmark: Cora Academic Citation Network")
-    add_p(doc, "We evaluate multi-hop citation reachability on the Cora academic network (2,708 papers, 5,429 directed citations). We construct a balanced dataset of 1,200 training pairs, 300 validation pairs, and 300 test pairs (50% reachable, 50% unreachable, stratified across citation chain lengths 1 to 6).")
+    add_p(doc, "We evaluate multi-hop citation reachability on the Cora academic network (Sen et al., 2008; 2,708 papers, 5,429 directed citations). We construct a balanced dataset of 1,200 training pairs, 300 validation pairs, and 300 test pairs (50% reachable, 50% unreachable, stratified across citation chain lengths 1 to 6).")
 
     # Table 2: Cora Results
     t2 = doc.add_table(rows=7, cols=5)
@@ -623,7 +623,7 @@ def build_manuscript():
     # 5. Related Work
     add_h1(doc, "5. Related Work")
     add_p(doc, "Implicit and Equilibrium Models: Deep Equilibrium Models (DEQs; Bai et al., 2019) and Monotone Operator Networks (MonDEQs; Winston & Kolter, 2020) find fixed points via root-solvers. CLR differs by integrating explicit contractive vector fields in continuous time, enabling test-time compute scaling through horizon extension.")
-    add_p(doc, "Neural ODEs & Over-smoothing in GNNs: Neural ODEs (Chen et al., 2018) model depth as time but lack contraction guarantees. Stacking discrete GNN layers leads to exponential information loss and over-smoothing (Li et al., 2018; Rusch et al., 2022). CLR bypasses discrete depth constraints, solving 6-hop queries without intermediate degradation.")
+    add_p(doc, "Continuous Graph Diffusion & Over-smoothing in Deep GNNs: Neural ODEs (Chen et al., 2018) model depth as continuous time but lack contraction guarantees. In graph representation learning, discrete Graph Convolutional Networks (GCNs; Kipf & Welling, 2017) suffer from exponential information loss and over-smoothing as depth increases (Li et al., 2018). While continuous graph neural diffusion (GRAND; Chamberlain et al., 2021) and graph-coupled oscillator networks (GraphCON; Rusch et al., 2022) address feature collapse in deep graph models, CLR specifically introduces strict Demidovich operator-norm contraction to latent reasoning dynamics. This guarantees exponential convergence to a unique problem-conditioned equilibrium, bypassing discrete depth saturation to resolve 6-hop queries without intermediate degradation.")
 
     # 6. Conclusion
     add_h1(doc, "6. Conclusion")
@@ -651,12 +651,14 @@ def build_manuscript():
     references = [
         "Amos, B., Xu, L., & Kolter, J. Z. (2017). Input convex neural networks. International Conference on Machine Learning (ICML), 146-155.",
         "Bai, S., Kolter, J. Z., & Koltun, V. (2019). Deep equilibrium models. Advances in Neural Information Processing Systems (NeurIPS), 32.",
+        "Chamberlain, B. P., Rowbottom, J., Goranova, M. I., Webb, S., Rossi, E., & Bronstein, M. M. (2021). GRAND: Graph neural diffusion. International Conference on Machine Learning (ICML), 1407-1418.",
         "Chen, R. T., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. (2018). Neural ordinary differential equations. Advances in Neural Information Processing Systems (NeurIPS), 31.",
         "Demidovich, B. P. (1961). Dissipativity of a nonlinear system of differential equations. Vestnik Moskovskogo Universiteta. Seriya I. Matematika, Mekhanika, 6, 19-27.",
+        "Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. International Conference on Learning Representations (ICLR).",
         "Li, Q., Han, Z., & Wu, X. M. (2018). Deeper insights into graph convolutional networks: An analytical perspective. AAAI Conference on Artificial Intelligence, 32(1).",
         "Lohmiller, W., & Slotine, J. J. E. (1998). On contraction analysis for non-linear systems. Automatica, 34(6), 683-696.",
         "Rusch, T. K., Chamberlain, B., Rowbottom, J., Mishra, S., & Bronstein, M. (2022). Graph-coupled oscillator networks. International Conference on Machine Learning (ICML), 18888-18909.",
-        "Sen, P., Namata, G., Bilgic, M., Getoor, L., Galligher, B., & Eliassi-Rad, T. (2008). Collective classification in network data. AI Magazine, 29(3), 93-93.",
+        "Sen, P., Namata, G., Bilgic, M., Getoor, L., Galligher, B., & Eliassi-Rad, T. (2008). Collective classification in network data. AI Magazine, 29(3), 93.",
         "Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. Advances in Neural Information Processing Systems (NeurIPS), 35, 24824-24837.",
         "Winston, E., & Kolter, J. Z. (2020). Monotone operator equilibrium networks. Advances in Neural Information Processing Systems (NeurIPS), 33, 10718-10728."
     ]
@@ -755,7 +757,7 @@ def build_supplementary():
     headers_s1 = ["Hyperparameter / Configuration", "Contractive Latent Reasoner (CLR)", "Discrete GNN Baseline (K=2..8)"]
     rows_s1 = [
         ["Latent State Dimension (d)", "16", "16"],
-        ["Input Feature Dimension (dx)", "1433", "1433"],
+        ["Input Feature Dimension (dx)", "16 (one-hot source impulse; 1433-dim raw Cora BoW not consumed)", "16 (one-hot source impulse; 1433-dim raw Cora BoW not consumed)"],
         ["Numerical Integrator", "Explicit 4th-Order Runge-Kutta (RK4)", "Discrete Layer Stacking (K hops)"],
         ["Integration Horizon (T)", "4.0 (adaptive scaling to 16.0)", "Fixed K layers (2, 4, 6, 8)"],
         ["Integration Step Size (dt)", "0.1667 (24 integration steps)", "N/A (discrete)"],
@@ -786,8 +788,8 @@ def build_supplementary():
     headers_s2 = ["Noise Scale (σ)", "Test Acc.", "Pred. Class 0 %", "Reachable Log-Norm", "Unreachable Log-Norm"]
     rows_s2 = [
         ["0.0 (Clean)", "100.00%", "50.0%", "-8.91", "-27.63"],
-        ["1e-8", "100.00%", "50.0%", "-8.91", "-20.45"],
-        ["1e-7", "92.67%", "42.7%", "-8.90", "-18.12"],
+        ["1e-8", "100.00%", "50.0%", "-8.91", "-21.02"],
+        ["1e-7", "92.67%", "42.7%", "-8.91", "-18.72"],
         ["1e-6", "50.00%", "0.0%", "-8.89", "-16.40"],
         ["1e-5", "50.00%", "0.0%", "-8.82", "-14.15"],
         ["1e-4", "50.00%", "0.0%", "-8.45", "-11.89"],
