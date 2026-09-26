@@ -232,6 +232,38 @@ Contractive Latent Dynamical Reasoning provides an algebraic, verifiable alterna
 
 ---
 
+## Conflict of Interest
+
+The authors declare that they have no known competing financial interests, personal relationships, or professional affiliations that could have appeared to influence or bias the work, findings, and interpretations reported in this paper.
+
+---
+
+## Author Contributions (CRediT)
+
+- **Dipesh Gurung**: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Data Curation, Writing - Original Draft, Visualization, Project Administration.
+- **Binod Bhattarai**: Validation, Formal Analysis, Mathematical Verification, Writing - Review & Editing.
+- **Dr. R N Thakur**: Supervision, Resources, Methodological Governance, Writing - Review & Editing, Final Approval.
+
+---
+
+## Declaration of Generative AI in Scientific Writing
+
+During the preparation of this work, the authors utilized generative AI tools (Anthropic Claude, Google Gemini/Antigravity) for code refactoring, numerical test verification, and grammatical polishing. The authors reviewed and edited the output, take full responsibility for the content of the publication, and conducted all mathematical proofs and empirical validations independently.
+
+---
+
+## Data and Code Availability
+
+The complete source code, synthetic dataset generators, citation network benchmarks, unit test suites, persisted execution JSON artifacts, and trained model checkpoints are publicly available in the project repository: [https://github.com/Dips7/contractive-latent-reasoning](https://github.com/Dips7/contractive-latent-reasoning). All experimental results are reproducible under fixed isolated seeding.
+
+---
+
+## Funding Statement
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+---
+
 ## References
 
 - Amos, B., Xu, L., & Kolter, J. Z. (2017). Input convex neural networks. *ICML*.
