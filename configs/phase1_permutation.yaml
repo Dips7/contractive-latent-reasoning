@@ -1,0 +1,21 @@
+defaults:
+  - base
+
+task:
+  name: "permutation_groups"
+  group_n: 5 # Symmetric group S_5
+  composition_length: 16
+  num_train_samples: 25000
+  num_val_samples: 2500
+
+model:
+  encoder_type: "transformer"
+  encoder_layers: 3
+  encoder_hidden_dim: 128
+  latent_dim: 128
+  vector_field_hidden_dim: 256
+
+dynamics:
+  t_span: [0.0, 8.0]
+  solver: "rk4"
+  step_size: 0.05

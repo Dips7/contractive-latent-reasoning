@@ -1,0 +1,49 @@
+{
+  "experiment": "phase1_proof_of_concept",
+  "timestamp_utc": "20260925_182525",
+  "seed": 42,
+  "wall_time_seconds": 111.40550184249878,
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "torch_version": "2.14.0",
+    "torchdiffeq_version": "0.2.5",
+    "device": "cpu"
+  },
+  "config": {
+    "epochs": 3,
+    "seq_len": 4,
+    "lr": 0.001,
+    "latent_dim": 128,
+    "seed": 42,
+    "config_path": "configs/phase1_parity.yaml"
+  },
+  "metrics": {
+    "final_train_loss": 0.6934941191673278,
+    "final_train_acc": 0.5095,
+    "final_val_loss": 0.6927614135742187,
+    "final_val_acc": 0.514,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.6937657237052918,
+        "train_acc": 0.4955,
+        "val_loss": 0.6928178806304932,
+        "val_acc": 0.514
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.692591775894165,
+        "train_acc": 0.5225,
+        "val_loss": 0.6928852715492249,
+        "val_acc": 0.514
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.6934941191673278,
+        "train_acc": 0.5095,
+        "val_loss": 0.6927614135742187,
+        "val_acc": 0.514
+      }
+    ]
+  }
+}

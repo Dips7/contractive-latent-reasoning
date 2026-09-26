@@ -1,0 +1,65 @@
+{
+  "experiment": "parity_generalization_audit",
+  "timestamp_utc": "20260925_183223",
+  "seed": 42,
+  "wall_time_seconds": 251.28018403053284,
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "torch_version": "2.14.0",
+    "torchdiffeq_version": "0.2.5",
+    "device": "cpu"
+  },
+  "config": {
+    "seed": 42
+  },
+  "metrics": {
+    "generalization_results": {
+      "8": {
+        "clr_final_acc": 1.0,
+        "gru_final_acc": 0.465,
+        "held_out_count": 0,
+        "total_val_count": 600,
+        "is_strictly_held_out": false,
+        "regime": "memorization"
+      },
+      "32": {
+        "clr_final_acc": 0.495,
+        "gru_final_acc": 0.48,
+        "held_out_count": 600,
+        "total_val_count": 600,
+        "is_strictly_held_out": true,
+        "regime": "generalization"
+      }
+    },
+    "scaling_held_out": [
+      {
+        "T": 0.5,
+        "held_out_val_acc": 0.51
+      },
+      {
+        "T": 1.0,
+        "held_out_val_acc": 0.49333333333333335
+      },
+      {
+        "T": 3.0,
+        "held_out_val_acc": 0.49
+      },
+      {
+        "T": 6.0,
+        "held_out_val_acc": 0.49166666666666664
+      },
+      {
+        "T": 10.0,
+        "held_out_val_acc": 0.49166666666666664
+      },
+      {
+        "T": 20.0,
+        "held_out_val_acc": 0.49166666666666664
+      },
+      {
+        "T": 40.0,
+        "held_out_val_acc": 0.49166666666666664
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "experiment": "perturbation_stress_test",
+  "timestamp_utc": "20260925_183457",
+  "seed": 42,
+  "wall_time_seconds": 65.79281616210938,
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "torch_version": "2.14.0",
+    "torchdiffeq_version": "0.2.5",
+    "device": "cpu"
+  },
+  "config": {
+    "num_nodes": 16,
+    "seed": 42
+  },
+  "metrics": {
+    "sweep_results": [
+      {
+        "rel_noise": 0.0,
+        "baseline_accuracy": 100.0,
+        "clr_accuracy": 96.16666666666667,
+        "initial_error": 0.0,
+        "residual_error": 0.0,
+        "decay_factor": Infinity
+      },
+      {
+        "rel_noise": 0.2,
+        "baseline_accuracy": 86.0,
+        "clr_accuracy": 96.16666666666667,
+        "initial_error": 0.03789704293012619,
+        "residual_error": 0.00013011622726672183,
+        "decay_factor": 291.25531407536687
+      },
+      {
+        "rel_noise": 0.5,
+        "baseline_accuracy": 84.33333333333334,
+        "clr_accuracy": 95.83333333333334,
+        "initial_error": 0.09496474932683141,
+        "residual_error": 0.0003056506485384154,
+        "decay_factor": 310.6970309739056
+      },
+      {
+        "rel_noise": 1.0,
+        "baseline_accuracy": 79.66666666666666,
+        "clr_accuracy": 96.0,
+        "initial_error": 0.18991756282354655,
+        "residual_error": 0.0006138133666306538,
+        "decay_factor": 309.4060390972529
+      },
+      {
+        "rel_noise": 2.0,
+        "baseline_accuracy": 76.83333333333333,
+        "clr_accuracy": 95.16666666666667,
+        "initial_error": 0.3792900976381804,
+        "residual_error": 0.0012744222093667638,
+        "decay_factor": 297.6173002579931
+      },
+      {
+        "rel_noise": 5.0,
+        "baseline_accuracy": 72.33333333333334,
+        "clr_accuracy": 93.83333333333333,
+        "initial_error": 0.9512259458240709,
+        "residual_error": 0.003058484645168248,
+        "decay_factor": 311.01216970822213
+      }
+    ],
+    "clr_clean_acc": 96.16666666666667
+  }
+}

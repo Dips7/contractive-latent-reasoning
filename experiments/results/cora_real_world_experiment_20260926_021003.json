@@ -1,0 +1,258 @@
+{
+  "experiment": "cora_real_world_experiment",
+  "timestamp_utc": "20260926_021003",
+  "seed": 42,
+  "wall_time_seconds": 478.6763710975647,
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "torch_version": "2.14.0",
+    "torchdiffeq_version": "0.2.5",
+    "device": "cpu"
+  },
+  "config": {
+    "dataset": "cora",
+    "num_nodes": 2708,
+    "num_edges": 5429,
+    "node_dim": 16,
+    "epochs": 6,
+    "seed": 42,
+    "num_train": 1200,
+    "num_val": 300,
+    "num_test": 300,
+    "power_iter_steps": 500,
+    "baselines_evaluated": [
+      "direct_mlp",
+      "gnn_k2",
+      "gnn_k4",
+      "gnn_k6",
+      "gnn_k8"
+    ]
+  },
+  "metrics": {
+    "dataset": "Cora Academic Citation Network",
+    "num_papers": 2708,
+    "num_citations": 5429,
+    "direct_baseline_test_acc": 0.6600000262260437,
+    "discrete_gnn_k2_test_acc": 0.6066666841506958,
+    "discrete_gnn_k4_test_acc": 0.746666669845581,
+    "discrete_gnn_k6_test_acc": 0.8766666650772095,
+    "discrete_gnn_k8_test_acc": 0.8633333444595337,
+    "clr_test_acc_t4": 0.9900000095367432,
+    "clr_test_acc_t12": 0.99,
+    "hop_breakdowns": {
+      "direct_baseline": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 0.6667
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 0.5417
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 0.5882
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 0.6071
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 0.9
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 0.6522
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 0.5714
+        }
+      },
+      "discrete_gnn_k2": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 1.0
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 0.625
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 1.0
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 0.0
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 0.0
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 0.0
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 0.0
+        }
+      },
+      "discrete_gnn_k4": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 1.0
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 0.4583
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 0.9412
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 0.6071
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 1.0
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 0.0
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 0.0
+        }
+      },
+      "discrete_gnn_k6": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 1.0
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 0.5
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 0.9412
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 0.7143
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 0.7667
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 0.6087
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 1.0
+        }
+      },
+      "discrete_gnn_k8": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 1.0
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 0.4583
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 0.8824
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 0.6786
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 0.7667
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 0.7391
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 0.8571
+        }
+      },
+      "clr_t4": {
+        "unreachable": {
+          "count": 150,
+          "accuracy": 1.0
+        },
+        "1_hop": {
+          "count": 24,
+          "accuracy": 1.0
+        },
+        "2_hop": {
+          "count": 17,
+          "accuracy": 1.0
+        },
+        "3_hop": {
+          "count": 28,
+          "accuracy": 1.0
+        },
+        "4_hop": {
+          "count": 30,
+          "accuracy": 1.0
+        },
+        "5_hop": {
+          "count": 23,
+          "accuracy": 1.0
+        },
+        "6_hop": {
+          "count": 28,
+          "accuracy": 0.8929
+        }
+      }
+    },
+    "continuous_test_time_scaling": {
+      "T_0.5": 0.9,
+      "T_1.0": 0.96,
+      "T_2.0": 0.9767,
+      "T_4.0": 0.99,
+      "T_6.0": 0.99,
+      "T_8.0": 0.99,
+      "T_12.0": 0.99,
+      "T_16.0": 0.99
+    },
+    "perturbation_stress_test": {
+      "noise_0.0": 0.99,
+      "noise_1e-06": 0.9233,
+      "noise_0.0001": 0.5,
+      "noise_0.01": 0.5,
+      "noise_0.1": 0.5,
+      "noise_0.5": 0.5
+    },
+    "contraction_guarantee": {
+      "a_norm_spectral": 1.0,
+      "d_min": 1.99144446849823,
+      "spectral_upper_bound": -0.99144446849823,
+      "is_strictly_contractive": true,
+      "empirical_lambda_max_sym_j": -1.9283437728881836
+    },
+    "checkpoints": {
+      "cora_direct": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_direct.pt",
+      "cora_gnn_k2": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_gnn_k2.pt",
+      "cora_gnn_k4": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_gnn_k4.pt",
+      "cora_gnn_k6": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_gnn_k6.pt",
+      "cora_gnn_k8": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_gnn_k8.pt",
+      "cora_clr": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/experiments/results/checkpoints/cora_clr.pt"
+    }
+  }
+}

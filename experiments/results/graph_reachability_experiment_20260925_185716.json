@@ -1,0 +1,61 @@
+{
+  "experiment": "graph_reachability_experiment",
+  "timestamp_utc": "20260925_185716",
+  "seed": 42,
+  "wall_time_seconds": 78.14368510246277,
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 14 2026, 15:24:41) [Clang 22.1.3 ]",
+    "torch_version": "2.14.0",
+    "torchdiffeq_version": "0.2.5",
+    "device": "cpu"
+  },
+  "config": {
+    "num_nodes": 16,
+    "num_samples_train": 3000,
+    "num_samples_val": 600,
+    "seed": 42
+  },
+  "metrics": {
+    "baseline_accuracy": 0.545,
+    "continuous_model_accuracy": 0.9466666666666667,
+    "demidovich_analytic_bound": 0.17294347286224365,
+    "empirical_lambda_max": -0.3872135281562805,
+    "max_A_spectral_norm": 1.6892343759536743,
+    "d_min": 1.5162909030914307,
+    "is_strictly_contractive": false,
+    "test_time_scaling": [
+      [
+        0.5,
+        0.7466666666666667
+      ],
+      [
+        1.0,
+        0.845
+      ],
+      [
+        2.0,
+        0.925
+      ],
+      [
+        4.0,
+        0.9466666666666667
+      ],
+      [
+        6.0,
+        0.9616666666666667
+      ],
+      [
+        8.0,
+        0.9633333333333334
+      ],
+      [
+        12.0,
+        0.9633333333333334
+      ],
+      [
+        20.0,
+        0.9633333333333334
+      ]
+    ]
+  }
+}

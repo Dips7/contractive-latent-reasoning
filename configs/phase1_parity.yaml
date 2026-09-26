@@ -1,0 +1,21 @@
+defaults:
+  - base
+
+task:
+  name: "parity"
+  seq_len: 8
+  num_train_samples: 1000
+  num_val_samples: 200
+  num_test_samples: 200
+
+model:
+  encoder_type: "gru" # "gru", "transformer"
+  encoder_hidden_dim: 64
+  latent_dim: 128
+  vector_field_hidden_dim: 256
+  readout_type: "linear"
+
+dynamics:
+  t_span: [0.0, 5.0]
+  solver: "rk4"
+  step_size: 0.1

@@ -1,0 +1,22 @@
+defaults:
+  - base
+
+task:
+  name: "graph_connectivity"
+  num_nodes: 32
+  edge_prob: 0.15
+  k_hop_min: 4
+  k_hop_max: 12
+  num_train_samples: 20000
+  num_val_samples: 2000
+
+model:
+  encoder_type: "transformer"
+  encoder_layers: 2
+  encoder_hidden_dim: 128
+  latent_dim: 128
+  vector_field_hidden_dim: 256
+
+dynamics:
+  t_span: [0.0, 10.0]
+  solver: "dopri5"

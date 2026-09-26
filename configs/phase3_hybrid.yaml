@@ -1,0 +1,15 @@
+defaults:
+  - base
+
+hybrid:
+  training_regime: "joint" # "joint" or "two_stage"
+  bridge_type: "mlp" # "linear", "mlp"
+  decoder_model_dim: 256
+  decoder_num_heads: 4
+  decoder_num_layers: 4
+  max_output_tokens: 32
+  thought_prefix_length: 1
+
+test_time_scaling:
+  eval_t_values: [1.0, 2.0, 5.0, 10.0, 20.0]
+  eval_solvers: ["rk4", "dopri5"]

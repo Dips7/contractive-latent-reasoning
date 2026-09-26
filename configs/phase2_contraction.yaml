@@ -1,0 +1,15 @@
+defaults:
+  - base
+
+contraction:
+  method: "icnn_damping" # "icnn_damping", "spectral_norm_penalty", "mondeq"
+  damping_coefficient: 0.5
+  kappa_target: 0.2
+  spectral_penalty_weight: 0.1
+  power_iteration_steps: 3
+
+ablation:
+  evaluate_noise_robustness: true
+  noise_std: 0.1
+  perturbation_fraction: 0.5 # perturb at t = T/2
+  trajectory_seeds: 10
