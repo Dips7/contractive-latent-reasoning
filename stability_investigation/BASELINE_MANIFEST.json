@@ -1,0 +1,126 @@
+{
+  "manifest_title": "Stability and Long-Range Information Propagation: Phase 0 Baseline Manifest",
+  "creation_timestamp": "2026-11-16T01:25:10.016764+00:00",
+  "purpose": "Freeze baseline state of authoritative Cora manuscript, Phase 1/Phase 2 exploratory archives, audit records, and source files before starting new investigation.",
+  "status": "PHASE_0_FROZEN",
+  "core_files": {
+    "manuscript/manuscript.md": {
+      "sha256": "a246cf091ade03126531269f6a41b283320d60a6d4e138e214154fd82791427e",
+      "size_bytes": 46442
+    },
+    "manuscript/template.md": {
+      "sha256": "6b56c19c89d991dbb07c8e6d4533e12e6931594d6c4de765e31ca7d036cd93d7",
+      "size_bytes": 40091
+    },
+    "submission_package/reworked/manuscript.md": {
+      "sha256": "a246cf091ade03126531269f6a41b283320d60a6d4e138e214154fd82791427e",
+      "size_bytes": 46442
+    },
+    "submission_package/reworked/manuscript.html": {
+      "sha256": "9c4dc27b917d821c7257c05e304d114546ae695cba6c8be790ddc1acbf62878d",
+      "size_bytes": 132791
+    },
+    "submission_package/reworked/05_Supplementary_Material.md": {
+      "sha256": "516be5270b778740164fdbd9a029fa450e2db16de13ef5e65e7e7e82ca03a349",
+      "size_bytes": 13286
+    },
+    "submission_package/reworked/VENUE_FIT_AND_REQUIREMENTS.md": {
+      "sha256": "543d6eaefea04aa46c44352e9677c79ac38303676cf784b48622fecfd15a358b",
+      "size_bytes": 4999
+    },
+    "src/models/certified_cora.py": {
+      "sha256": "1be1826cc913799d6f0d8b60049649a17f02cb821c7adcc02140012ecbde729a",
+      "size_bytes": 4140
+    },
+    "src/models/cora_reasoner.py": {
+      "sha256": "3a3bf447a7c9468d91675b202c5295c671132a585933c4844a02f48053eb848e",
+      "size_bytes": 10826
+    },
+    "src/dynamics/solvers.py": {
+      "sha256": "cc6ff0f05d4d86153291668ea966d7d5309251158fc2cb30e3ab01525557134b",
+      "size_bytes": 5420
+    },
+    "scripts/build_research_release.py": {
+      "sha256": "ec0d10dd16fbe7775962e258259a1676fb4bfe03cc0c0a15d502b8a9552b27b3",
+      "size_bytes": 16731
+    },
+    "scripts/verify_reworked_models.py": {
+      "sha256": "33553fa53a4fa9d456ec4f434e0f5d619dfc62387138d36d63efc4ab8a3ca31d",
+      "size_bytes": 3200
+    },
+    "external_validation/scripts/run_gate_d_confirmatory_audit.py": {
+      "sha256": "1c6b04b9618e61f959e5ccc6a4d749006c3e6f1c6f589b24fd0acdeb7efea622",
+      "size_bytes": 33292
+    },
+    "external_validation/scripts/run_gate_c_confirmatory.py": {
+      "sha256": "bb0195cee547451b7c129aad19f88f808549588106670cc038e624bda097cd1c",
+      "size_bytes": 18984
+    },
+    "data/manifests/cora_splits_manifest.json": {
+      "sha256": "706a471de1c4ce789d9213a62ad3f8a2e2e62e5db36f9196e563e893176d6052",
+      "size_bytes": 518530
+    },
+    "external_validation/data/manifests/confirmatory_v2_manifest.json": {
+      "sha256": "57f05d7f2e128802aad8e261fab877ad0c298080d9250d75d840ad3278ca5627",
+      "size_bytes": 1226916
+    },
+    "external_validation/results/frozen_provenance_manifest.json": {
+      "sha256": "7974e1c2f2173094f701d471ac132019d545d128671c9e396e6b4b868f55debe",
+      "size_bytes": 28979
+    },
+    "submission_package/reworked/release_manifest.json": {
+      "sha256": "5eabd928561d4371bf913575a0e310430d66e28efa0d49e7fb5a4f9f6d99ba7d",
+      "size_bytes": 5313
+    },
+    "CLAIM_EVIDENCE_MATRIX.md": {
+      "sha256": "4ab1d1bd286aa3f33c4b7721e8411439d3839cde0d2edae1f335d3e088e5e00a",
+      "size_bytes": 7300
+    },
+    "audit/FROZEN_ARTIFACT_VERIFICATION_RECORD.md": {
+      "sha256": "6b9f75807ef6f9562f3682bdf3d6c654d81f134f52fc296908765f6cdb3bec98",
+      "size_bytes": 7244
+    },
+    "audit/PHASE_2_DISPOSITION_NOTE.md": {
+      "sha256": "d99d2aa0ead94e7ca902f13e70ba609d4899d4f6a128957a4317b970c3e248cf",
+      "size_bytes": 8070
+    },
+    "external_validation/EXTERNAL_VALIDATION_REPORT.md": {
+      "sha256": "b5e828f242333522058e0faf9b492d67bd67a7537cc935e071d0a9a5b1928cc2",
+      "size_bytes": 52423
+    },
+    "external_validation/PROTOCOL_V2_ADDENDUM.md": {
+      "sha256": "d97120fa4c5a403cffa66b15bfe97817a0ff1fba553790db62fe3217a449193b",
+      "size_bytes": 6959
+    },
+    "external_validation/results/confirmatory_v2/gate_d_confirmatory_audit.json": {
+      "sha256": "f062ad7e6edd4ef276f4c35c8a1d37fb12f6d07b57d665835c7fd061d45d4d78",
+      "size_bytes": 39836
+    },
+    "results/processed/reworked_summary.json": {
+      "sha256": "156bef65f7b531b8017190895c29a215b8257e3826e295a441b8fac191729b06",
+      "size_bytes": 12001
+    },
+    "results/processed/verification.json": {
+      "sha256": "9e8280961daa9b3f6208d35cfff4d17a55d0a1662eaba38ac42e32d58822cc04",
+      "size_bytes": 15819
+    }
+  },
+  "directories_summary": {
+    "results_reworked": {
+      "path": "results/reworked",
+      "file_count": 83,
+      "frozen_provenance_sha256": "a65ff2db8656232105bf038a618f82e5a5374ab9a02eae31fc65a1cc30031cfa"
+    },
+    "phase1_locked_evaluation": {
+      "path": "external_validation/results/locked_evaluation",
+      "file_count": 67,
+      "frozen_provenance_sha256": "a4c7a49617b8ddda83d227eec2366ca82bd93f075eadc1aa958ffb926b2fd55a"
+    },
+    "phase2_confirmatory_v2": {
+      "path": "external_validation/results/confirmatory_v2",
+      "file_count": 193,
+      "gate_d_audit_status": "PASSED_WITH_DISCLOSED_DEVIATIONS",
+      "manifest_sha256": "57f05d7f2e128802aad8e261fab877ad0c298080d9250d75d840ad3278ca5627"
+    }
+  }
+}

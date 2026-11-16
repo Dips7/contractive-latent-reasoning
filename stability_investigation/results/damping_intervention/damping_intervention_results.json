@@ -1,0 +1,3948 @@
+{
+  "benchmark": "Phase 3 Controlled Damping Intervention",
+  "date": "2026-11-16",
+  "families": {
+    "chain_ladder": {
+      "ContinuousDamped_dmin_0.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 42,
+          "train_time_sec": 13.437271118164062,
+          "best_val_loss": 0.000971788598690182,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9977994561195374,
+          "d_min_realized": 1.048130750656128,
+          "alpha_realized": 0.05034134555507208,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010355836246162653
+          },
+          "test_loss": 0.0010355836246162653,
+          "checkpoint_sha256": "8ec7a319285e9b59ec66725d614cd643204d5122c6fac6ea5c3a4f9d521c77c8"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 101,
+          "train_time_sec": 14.059249877929688,
+          "best_val_loss": 0.00032208765333052725,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 0.8445007801055908,
+          "alpha_realized": -0.15547895441785542,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00042899326654151083
+          },
+          "test_loss": 0.00042899326654151083,
+          "checkpoint_sha256": "66d9a0d6cc12895d4f86ac68ba3768c9fc16d2e79d7bb8374f1304fe3435f6e8"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 777,
+          "train_time_sec": 12.931408882141113,
+          "best_val_loss": 0.0007317063282243907,
+          "sigma_b1": 0.9999897480010986,
+          "sigma_b2": 0.9999897480010986,
+          "d_min_realized": 1.005468726158142,
+          "alpha_realized": 0.005489230050841343,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0008173696114681661
+          },
+          "test_loss": 0.0008173696114681661,
+          "checkpoint_sha256": "89c27b7819f311dad8ff6568637e4bfde0b6319778dc420c733312123f421959"
+        }
+      ],
+      "ContinuousDamped_dmin_0.80": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 42,
+          "train_time_sec": 12.76767110824585,
+          "best_val_loss": 0.0009726381103973836,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.3142919540405273,
+          "alpha_realized": 0.31431192149685927,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010136976838111878
+          },
+          "test_loss": 0.0010136976838111878,
+          "checkpoint_sha256": "a302b9468f1307c29d82a483bf387f91de1d36acc369e0213fb09ed6cbc55770"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 101,
+          "train_time_sec": 13.395076751708984,
+          "best_val_loss": 0.00045842416875530034,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.1456682682037354,
+          "alpha_realized": 0.14568823566006728,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005283686681650579
+          },
+          "test_loss": 0.0005283686681650579,
+          "checkpoint_sha256": "c9fd0b2fdf1a9cc01b5153348b2fdf9ac5a32705b12e6e8a180edbaf7261775f"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 777,
+          "train_time_sec": 13.05813193321228,
+          "best_val_loss": 0.0008563282317481935,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999897480010986,
+          "d_min_realized": 1.2924308776855469,
+          "alpha_realized": 0.2924510835580776,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0009323284146375954
+          },
+          "test_loss": 0.0009323284146375954,
+          "checkpoint_sha256": "400780b646e7d7fd99eb8a44eae802e6c29ec143e475b820b6a156e3144518b1"
+        }
+      ],
+      "ContinuousDamped_dmin_1.05": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 42,
+          "train_time_sec": 12.832791805267334,
+          "best_val_loss": 0.0011072253109887242,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.5510971546173096,
+          "alpha_realized": 0.5511171816777143,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011775856837630272
+          },
+          "test_loss": 0.0011775856837630272,
+          "checkpoint_sha256": "c77193a1f12faba0437433ef2ad7a560a6916d1aba352b3f604982b39fd63182"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 101,
+          "train_time_sec": 12.822761058807373,
+          "best_val_loss": 0.0005401082744356245,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.4166054725646973,
+          "alpha_realized": 0.41662561883316584,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005954817868769168
+          },
+          "test_loss": 0.0005954817868769168,
+          "checkpoint_sha256": "a80a7052cf201962f82a48291b9d86e92237c7f8ecc0c0e82f42e90c30e9d21e"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 777,
+          "train_time_sec": 13.019700050354004,
+          "best_val_loss": 0.0009252911258954555,
+          "sigma_b1": 0.9999902248382568,
+          "sigma_b2": 0.9999895691871643,
+          "d_min_realized": 1.5157932043075562,
+          "alpha_realized": 0.5158134101801721,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010148863191716373
+          },
+          "test_loss": 0.0010148863191716373,
+          "checkpoint_sha256": "1f92f95eaab7f1dc60490c53653cd4434731eb2bbaac78a1c16f92ce409d8653"
+        }
+      ],
+      "ContinuousDamped_dmin_1.20": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 42,
+          "train_time_sec": 12.661200046539307,
+          "best_val_loss": 0.0011267816298641264,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.6834644079208374,
+          "alpha_realized": 0.6834844945852581,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0012186575215309859
+          },
+          "test_loss": 0.0012186575215309859,
+          "checkpoint_sha256": "297666238aa0108cbfd4d9021f6f2810560377f8a71d5bcc948d9ef42687167d"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 101,
+          "train_time_sec": 12.534104108810425,
+          "best_val_loss": 0.0005752040888182819,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.5805970430374146,
+          "alpha_realized": 0.5806171297018352,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0006277362466789782
+          },
+          "test_loss": 0.0006277362466789782,
+          "checkpoint_sha256": "4b084eb3b3c1ee432c7427497a3025d7e1fad124e4d0421c060c9bdbb22b4917"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 777,
+          "train_time_sec": 12.466827154159546,
+          "best_val_loss": 0.00096144262352027,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.6505522727966309,
+          "alpha_realized": 0.6505721806489078,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010631215176545084
+          },
+          "test_loss": 0.0010631215176545084,
+          "checkpoint_sha256": "94a01317c3671ec35bfa1538abaaae725c170e0fe9ec89f4a5f2ffdfbfc9ecb5"
+        }
+      ],
+      "ContinuousDamped_dmin_1.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 42,
+          "train_time_sec": 12.811239004135132,
+          "best_val_loss": 0.001166373840533197,
+          "sigma_b1": 0.9999902844429016,
+          "sigma_b2": 0.9999902248382568,
+          "d_min_realized": 1.9523401260375977,
+          "alpha_realized": 0.9523596166614681,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013059742283076047
+          },
+          "test_loss": 0.0013059742283076047,
+          "checkpoint_sha256": "4e37393a9ee91246abc3f04aa1d04469ff2485893b96d981eb0b4157b0e23323"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 101,
+          "train_time_sec": 12.939095258712769,
+          "best_val_loss": 0.0006318310624919832,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.9035706520080566,
+          "alpha_realized": 0.9035906790684294,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0006870858836919069
+          },
+          "test_loss": 0.0006870858836919069,
+          "checkpoint_sha256": "82244a12f854732e2bb4017c340112fb95d870fb5eae601f20d1b721370298b3"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 777,
+          "train_time_sec": 12.963714122772217,
+          "best_val_loss": 0.0010316480766050518,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.922593355178833,
+          "alpha_realized": 0.9226136206553832,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011607012478634716
+          },
+          "test_loss": 0.0011607012478634716,
+          "checkpoint_sha256": "d1551382a4ebcd80efdcad0ebc97e23ac84e195fa2703029512d53242ea2d557"
+        }
+      ],
+      "ContinuousDamped_dmin_2.00": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 42,
+          "train_time_sec": 12.515504837036133,
+          "best_val_loss": 0.0012862191651947796,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 2.4071311950683594,
+          "alpha_realized": 1.4071511029206327,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0015324223786592484
+          },
+          "test_loss": 0.0015324223786592484,
+          "checkpoint_sha256": "5c79172cca58b16064489ab1dfbd7a2910adf73e835369f2aaba53a931be7162"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 101,
+          "train_time_sec": 12.511491775512695,
+          "best_val_loss": 0.0007312858360819519,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 2.3989806175231934,
+          "alpha_realized": 1.3990007041876353,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.000804598955437541
+          },
+          "test_loss": 0.000804598955437541,
+          "checkpoint_sha256": "1d1159b924db62bb8af3e8caa9d4dbf849a1cc66c23d36713c07ae4149a5d8e4"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 777,
+          "train_time_sec": 12.961013078689575,
+          "best_val_loss": 0.001153965131379664,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 2.3872902393341064,
+          "alpha_realized": 1.3873100279782768,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013331243302673102
+          },
+          "test_loss": 0.0013331243302673102,
+          "checkpoint_sha256": "28ab8690bdc39b373941f4d2da209fdc54d094c8944ba257a472eb2f46a4a439"
+        }
+      ],
+      "ContinuousUndamped": [
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 12.407145977020264,
+          "best_val_loss": 3.816860589722637e-05,
+          "sigma_b1": 0.9999901652336121,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999800921477124,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00013577744321082718
+          },
+          "test_loss": 0.00013577744321082718,
+          "checkpoint_sha256": "9220b7fd14f7f62e87e19fd8438f686d1da643b3021a0616731c0f4f4e291c89"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 12.689541339874268,
+          "best_val_loss": 4.5040080294711515e-05,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999802113558331,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00015636754760635086
+          },
+          "test_loss": 0.00015636754760635086,
+          "checkpoint_sha256": "d6e31d9fabaee3798f936914b8f15c517bf28ee67a7446c76ead9fdfd89c006e"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 12.383628129959106,
+          "best_val_loss": 8.527686804882251e-05,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999799133355793,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00034584090462885797
+          },
+          "test_loss": 0.00034584090462885797,
+          "checkpoint_sha256": "c305ba00c0d77d84917fc6b1e0654942c1baddc4312a53a074f3c014242c7393"
+        }
+      ],
+      "DiscreteGNN_L6": [
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 0.7516129016876221,
+          "best_val_loss": 2.0345842131064273e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00017248799013032113
+          },
+          "test_loss": 0.00017248799013032113,
+          "checkpoint_sha256": "2302da5e0e0fb3c1bf428ce0ab0aad8ae3a228c1d62ebe0c7889abeaf0f2674b"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 0.7280497550964355,
+          "best_val_loss": 3.734804704436101e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00021595375292235986
+          },
+          "test_loss": 0.00021595375292235986,
+          "checkpoint_sha256": "a68da3229c9ec7665a2560b3984ed8d665d7414a5c77b63c1307966ccdb5c1d6"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 0.7440369129180908,
+          "best_val_loss": 3.850677421723958e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0003134940197924152
+          },
+          "test_loss": 0.0003134940197924152,
+          "checkpoint_sha256": "985509723077976c862f7f966edacb69417b1d751de89c69729693cfbd51fb73"
+        }
+      ]
+    },
+    "bottleneck": {
+      "ContinuousDamped_dmin_0.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 42,
+          "train_time_sec": 14.192320108413696,
+          "best_val_loss": 0.0008045262075029314,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 0.9498298168182373,
+          "alpha_realized": -0.050150275329485794,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.000913439760915935
+          },
+          "test_loss": 0.000913439760915935,
+          "checkpoint_sha256": "d328f83634dded7ea706a67575042504f0a1f0881d089eddf25222b22515bc0c"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 101,
+          "train_time_sec": 14.161038160324097,
+          "best_val_loss": 0.0005337408219929785,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 0.8801916837692261,
+          "alpha_realized": -0.11978811035825743,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0006802243064157665
+          },
+          "test_loss": 0.0006802243064157665,
+          "checkpoint_sha256": "f88caec0a206f08556e5ea3cbe4e679b573f52dcb8e20bf686237a50658d6ce5"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 777,
+          "train_time_sec": 14.135248899459839,
+          "best_val_loss": 0.001000853138975799,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 0.9312403798103333,
+          "alpha_realized": -0.06873923550503847,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0012015508022159339
+          },
+          "test_loss": 0.0012015508022159339,
+          "checkpoint_sha256": "586ae5ae4aec99e6a95899e6d0b708c594206086daa2115210e56cbd790614e5"
+        }
+      ],
+      "ContinuousDamped_dmin_0.80": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 42,
+          "train_time_sec": 14.344374895095825,
+          "best_val_loss": 0.0009241806692443788,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.175034523010254,
+          "alpha_realized": 0.17505460967469588,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010839223396033049
+          },
+          "test_loss": 0.0010839223396033049,
+          "checkpoint_sha256": "e832de7dca705d8c43e39002d9fa47dc54c70b15c62144f7acd7fed7c77717f7"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 101,
+          "train_time_sec": 14.890038013458252,
+          "best_val_loss": 0.0006138630560599267,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.1894232034683228,
+          "alpha_realized": 0.18944311132059966,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0007710220757871866
+          },
+          "test_loss": 0.0007710220757871866,
+          "checkpoint_sha256": "ab5a0994c585fbbe74034700af9dae576b809950f30a59759cb54d86005aacec"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 777,
+          "train_time_sec": 14.533504724502563,
+          "best_val_loss": 0.0010838360176421702,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.1978580951690674,
+          "alpha_realized": 0.19787812222945433,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013675455236807465
+          },
+          "test_loss": 0.0013675455236807465,
+          "checkpoint_sha256": "0cf4702db33622558e61d14e7cd560a1591f6cff2db0dd92630d9b1f2974dd16"
+        }
+      ],
+      "ContinuousDamped_dmin_1.05": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 42,
+          "train_time_sec": 14.45731496810913,
+          "best_val_loss": 0.0009736874781083316,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.4270262718200684,
+          "alpha_realized": 0.4270460008601802,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011471168603748084
+          },
+          "test_loss": 0.0011471168603748084,
+          "checkpoint_sha256": "6e25dcf4218dc31ab27b1281ede1dec17791a2c684d16ae4839b29f9a79e8ae4"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 101,
+          "train_time_sec": 14.400921106338501,
+          "best_val_loss": 0.0006794699002057314,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.4283287525177002,
+          "alpha_realized": 0.4283487795780765,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0008588144555687904
+          },
+          "test_loss": 0.0008588144555687904,
+          "checkpoint_sha256": "5a3fb1776b8ef624f675a1d94ff46f02a0003a9fbc0ea98c29b60801ec40797e"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 777,
+          "train_time_sec": 14.314048051834106,
+          "best_val_loss": 0.0011554071679711342,
+          "sigma_b1": 0.9999901652336121,
+          "sigma_b2": 0.9999896883964539,
+          "d_min_realized": 1.4244815111160278,
+          "alpha_realized": 0.4245016573845497,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00149992392398417
+          },
+          "test_loss": 0.00149992392398417,
+          "checkpoint_sha256": "3bfc8950dca3ce31167676dd662ed4bb422175214e8d2b67d09a8d1c7a2f7bb6"
+        }
+      ],
+      "ContinuousDamped_dmin_1.20": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 42,
+          "train_time_sec": 14.267951726913452,
+          "best_val_loss": 0.0011041282559745014,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.583817481994629,
+          "alpha_realized": 0.583837449450975,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013865047367289662
+          },
+          "test_loss": 0.0013865047367289662,
+          "checkpoint_sha256": "e4be7a385890a33f39cec5ce075d73089985122076462447c03a32972f78b1e1"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 101,
+          "train_time_sec": 14.452903985977173,
+          "best_val_loss": 0.0007229204056784511,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.5690010786056519,
+          "alpha_realized": 0.5690213440822021,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0009198364918120205
+          },
+          "test_loss": 0.0009198364918120205,
+          "checkpoint_sha256": "3ab82bccf0ed0759bb03481e9d5731c63c6f1c0028e52cdb40a8f6aeb03f8200"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 777,
+          "train_time_sec": 14.364261150360107,
+          "best_val_loss": 0.0012003352749161422,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.5619628429412842,
+          "alpha_realized": 0.5619826315854546,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0015792666003108025
+          },
+          "test_loss": 0.0015792666003108025,
+          "checkpoint_sha256": "20483cbaa02e2a008854442423fe3518a5fc3b40ceed1f8e4767c9c3faa04658"
+        }
+      ],
+      "ContinuousDamped_dmin_1.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 42,
+          "train_time_sec": 14.323158979415894,
+          "best_val_loss": 0.0010752081871032715,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8281962871551514,
+          "alpha_realized": 0.8282164334236164,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013108891202136875
+          },
+          "test_loss": 0.0013108891202136875,
+          "checkpoint_sha256": "d58dba25d225b8a5dd07bd94f35a0e8288a6a813c9f8ebba4cb7fc19fb140b30"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 101,
+          "train_time_sec": 14.266926765441895,
+          "best_val_loss": 0.0008202210592571646,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.8469427824020386,
+          "alpha_realized": 0.8469627498583634,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010586593532934784
+          },
+          "test_loss": 0.0010586593532934784,
+          "checkpoint_sha256": "c6610091914aac4061879b6d935916683d8c69ff47bdb545df55809bdb46334f"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 777,
+          "train_time_sec": 14.337901830673218,
+          "best_val_loss": 0.0012847467442043126,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8387761116027832,
+          "alpha_realized": 0.8387961982672039,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0017276156228035688
+          },
+          "test_loss": 0.0017276156228035688,
+          "checkpoint_sha256": "9be381611ccc4cd79538811dcf7947ffa090e1da47107dba350f1572a71f1dd8"
+        }
+      ],
+      "ContinuousDamped_dmin_2.00": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 42,
+          "train_time_sec": 15.152604341506958,
+          "best_val_loss": 0.001248390122782439,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 2.293034076690674,
+          "alpha_realized": 1.2930539249388957,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.001583711546845734
+          },
+          "test_loss": 0.001583711546845734,
+          "checkpoint_sha256": "b8fa22946b67c5e36b9290e761b53747d74782b88e712e8add7607dcfa37bb34"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 101,
+          "train_time_sec": 14.716667890548706,
+          "best_val_loss": 0.0010119624203070998,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 2.312559127807617,
+          "alpha_realized": 1.3125791548679935,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.001339313737116754
+          },
+          "test_loss": 0.001339313737116754,
+          "checkpoint_sha256": "1faf6eb436f1eb557c24a35681fb80dd53c1474317a54541a4a30f4524fceeee"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 777,
+          "train_time_sec": 14.89817500114441,
+          "best_val_loss": 0.001446389185730368,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 2.3066024780273438,
+          "alpha_realized": 1.3066222666715142,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0020020889583975076
+          },
+          "test_loss": 0.0020020889583975076,
+          "checkpoint_sha256": "f4ef5a96caa78183a039079754e94164bc76b0bbd8ad2703b4f1993e7f06b09f"
+        }
+      ],
+      "ContinuousUndamped": [
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 14.155113935470581,
+          "best_val_loss": 0.0001585074933245778,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999800921477231,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00029713990807067603
+          },
+          "test_loss": 0.00029713990807067603,
+          "checkpoint_sha256": "3d963ac2f3ac2cd6f035710b5ab6b8fa2f982da43c4d6a1f12f83547bd75deb9"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 14.550835847854614,
+          "best_val_loss": 0.0003054412518395111,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999800325436752,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005577938456553966
+          },
+          "test_loss": 0.0005577938456553966,
+          "checkpoint_sha256": "7663bf3273a250d2bcace71e9063d4b870828c86f11d14bc8d7c0ddb260d7725"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 13.966078996658325,
+          "best_val_loss": 0.0005143223970662802,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999797941274906,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0009377686074003577
+          },
+          "test_loss": 0.0009377686074003577,
+          "checkpoint_sha256": "a822ad34142d19d11ade7027e2f1ae4ec4870d7abbeb6a26c077db39e5d4d555"
+        }
+      ],
+      "DiscreteGNN_L6": [
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 0.8591110706329346,
+          "best_val_loss": 2.370748597968486e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 5.453682388179004e-05
+          },
+          "test_loss": 5.453682388179004e-05,
+          "checkpoint_sha256": "d8aa20c18a9bb158e6c1531aea6f480a973cf1d080f961886b1f164e3d85f731"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 0.8124392032623291,
+          "best_val_loss": 4.7489546886936296e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 9.792283817660064e-05
+          },
+          "test_loss": 9.792283817660064e-05,
+          "checkpoint_sha256": "5052bb261b52b50d3b9f75ba9e84c822626f712b0c268ff65ef02379286a595c"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 0.8290598392486572,
+          "best_val_loss": 4.451939639693592e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 7.625739235663786e-05
+          },
+          "test_loss": 7.625739235663786e-05,
+          "checkpoint_sha256": "131789771759b6f549f8761e3e02d2e0b124f4c901df07ea1c5520137c1f4184"
+        }
+      ]
+    },
+    "random_dag": {
+      "ContinuousDamped_dmin_0.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 42,
+          "train_time_sec": 7.639290809631348,
+          "best_val_loss": 0.00420815940015018,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.0002384185791016,
+          "alpha_realized": 0.00025868405565177,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.00445623718982248
+          },
+          "test_loss": 0.00445623718982248,
+          "checkpoint_sha256": "823b7f6f058c52f703195f909f35e9b7338578d1f1440de9d5fa14092eae509d"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 101,
+          "train_time_sec": 7.495381832122803,
+          "best_val_loss": 0.0021868052426725626,
+          "sigma_b1": 0.9999897480010986,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 0.9415526390075684,
+          "alpha_realized": -0.05842715511990093,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.002452591270837304
+          },
+          "test_loss": 0.002452591270837304,
+          "checkpoint_sha256": "4701af41f34229df943d4e195d1699358382dbb8618ca469c0690a7e585a215f"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.5,
+          "seed": 777,
+          "train_time_sec": 12.403257131576538,
+          "best_val_loss": 0.00778602808713913,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 0.9111899137496948,
+          "alpha_realized": -0.08879005918993244,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.00857067630360169
+          },
+          "test_loss": 0.00857067630360169,
+          "checkpoint_sha256": "cf19af098ba04d4a43a5797aadbe87205652341d72320acd11b9788feb134bfc"
+        }
+      ],
+      "ContinuousDamped_dmin_0.80": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 42,
+          "train_time_sec": 7.568482160568237,
+          "best_val_loss": 0.004154607653617859,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.2988377809524536,
+          "alpha_realized": 0.2988576888047305,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004469217829309501
+          },
+          "test_loss": 0.004469217829309501,
+          "checkpoint_sha256": "127c6667caec337d3aff86e4e0df0e1b041608ba85c52077c296ae709bfefdcc"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 101,
+          "train_time_sec": 7.5982537269592285,
+          "best_val_loss": 0.002388925990089774,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.2548993825912476,
+          "alpha_realized": 0.25491923083947654,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.002699651932283365
+          },
+          "test_loss": 0.002699651932283365,
+          "checkpoint_sha256": "b2ea749bcef3fea9966ec488d488f4df6f1c47e5d3dabb8c3ed1f0019fdc704e"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 0.8,
+          "seed": 777,
+          "train_time_sec": 7.641211032867432,
+          "best_val_loss": 0.010317387990653515,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.208327054977417,
+          "alpha_realized": 0.20834726084992639,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.011257439606835121
+          },
+          "test_loss": 0.011257439606835121,
+          "checkpoint_sha256": "b2e06f7dc3e8c48c91d0376d5f7ba8ee5a5e2db6fcc36e0589ff88f436272df6"
+        }
+      ],
+      "ContinuousDamped_dmin_1.05": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 42,
+          "train_time_sec": 7.526964902877808,
+          "best_val_loss": 0.0041525959968566895,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.5398027896881104,
+          "alpha_realized": 0.5398229359565789,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004537632756914895
+          },
+          "test_loss": 0.004537632756914895,
+          "checkpoint_sha256": "8b0b85c6cf57edd12c16e9cde9885b97f197058ed76f484b01e8f5c2c64011c0"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 101,
+          "train_time_sec": 7.652646064758301,
+          "best_val_loss": 0.002562390174716711,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.507080316543579,
+          "alpha_realized": 0.5071004032079998,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.002927819574584386
+          },
+          "test_loss": 0.002927819574584386,
+          "checkpoint_sha256": "1deccdbc1ff1a8c586341bab7920134a290ba7f881c240ab48f80b0b9d6ad332"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.05,
+          "seed": 777,
+          "train_time_sec": 7.48233699798584,
+          "best_val_loss": 0.012162938714027405,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 1.4504348039627075,
+          "alpha_realized": 0.45045512904329854,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.013257583748404082
+          },
+          "test_loss": 0.013257583748404082,
+          "checkpoint_sha256": "bb0628443c3436deeff227d8007a0561af285598ffbb0f6659e0d557f5c6add3"
+        }
+      ],
+      "ContinuousDamped_dmin_1.20": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 42,
+          "train_time_sec": 7.759443044662476,
+          "best_val_loss": 0.004199564922600985,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.684433102607727,
+          "alpha_realized": 0.6844531892721477,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004631862999847183
+          },
+          "test_loss": 0.004631862999847183,
+          "checkpoint_sha256": "66d531121c71302b8e1d7c3edc86e1a88c7c5bb57fd698a356b4bf00042357c6"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 101,
+          "train_time_sec": 7.497602224349976,
+          "best_val_loss": 0.002674404764547944,
+          "sigma_b1": 0.9999901652336121,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.6583693027496338,
+          "alpha_realized": 0.6583891509978628,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.003078209061641246
+          },
+          "test_loss": 0.003078209061641246,
+          "checkpoint_sha256": "69b54725bb4c588a9a1ea5657148b6ec299e99e8ec5ade464b10bf267c390ca9"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.2,
+          "seed": 777,
+          "train_time_sec": 7.715092897415161,
+          "best_val_loss": 0.013138583395630121,
+          "sigma_b1": 0.9999481439590454,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.596498727798462,
+          "alpha_realized": 0.5965605969004741,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.014327948045154864
+          },
+          "test_loss": 0.014327948045154864,
+          "checkpoint_sha256": "f081cac88cae0b7febb97313fbdda65517f88d1137c912224d15b4777b1bd52d"
+        }
+      ],
+      "ContinuousDamped_dmin_1.50": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 42,
+          "train_time_sec": 7.6194469928741455,
+          "best_val_loss": 0.00433169468306005,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.9741854667663574,
+          "alpha_realized": 0.9742056726388739,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004862319526879431
+          },
+          "test_loss": 0.004862319526879431,
+          "checkpoint_sha256": "10e0516729542f28e34a4f7c3289f91ae94e9fc041a23f79e86f81dfa7270b5d"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 101,
+          "train_time_sec": 7.3100011348724365,
+          "best_val_loss": 0.0029122859705239534,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 1.9571268558502197,
+          "alpha_realized": 0.9571468233065445,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0034007446805632054
+          },
+          "test_loss": 0.0034007446805632054,
+          "checkpoint_sha256": "6a7dc8e4c7b649f17ac4ea0ddc3a149b7844160da26fe3989607de66fd269966"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 1.5,
+          "seed": 777,
+          "train_time_sec": 7.2636871337890625,
+          "best_val_loss": 0.014756519347429276,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8893533945083618,
+          "alpha_realized": 0.8893736599849156,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.01615024365895948
+          },
+          "test_loss": 0.01615024365895948,
+          "checkpoint_sha256": "cec5a37c114485358940ff73763247bf99675ccd6987a62f08f48d9318d9eebf"
+        }
+      ],
+      "ContinuousDamped_dmin_2.00": [
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 42,
+          "train_time_sec": 7.243096113204956,
+          "best_val_loss": 0.004623279441148043,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 2.459414005279541,
+          "alpha_realized": 1.459434032339928,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0053396352321852915
+          },
+          "test_loss": 0.0053396352321852915,
+          "checkpoint_sha256": "3fe0914955aceb0754c2c15ac611e27051051791478bfc65d0e4aa440611bc67"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 101,
+          "train_time_sec": 7.280142784118652,
+          "best_val_loss": 0.0033176876604557037,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 2.4444448947906494,
+          "alpha_realized": 1.4444648622469813,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0039733442789330695
+          },
+          "test_loss": 0.0039733442789330695,
+          "checkpoint_sha256": "fbfcab5d4f0c54dca92e62f6b1517b51b4be9ecbf983f87653fe52f01490059c"
+        },
+        {
+          "model_type": "ContinuousDamped",
+          "nominal_damping": 2.0,
+          "seed": 777,
+          "train_time_sec": 7.388211965560913,
+          "best_val_loss": 0.01670652162283659,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 2.3782968521118164,
+          "alpha_realized": 1.378316938776237,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.018433705528641677
+          },
+          "test_loss": 0.018433705528641677,
+          "checkpoint_sha256": "90307b0873ddf20ad41d175e446ee371fb5fb4e813300fb95ebc30f7886e6b3a"
+        }
+      ],
+      "ContinuousUndamped": [
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 7.3619771003723145,
+          "best_val_loss": 0.0009064029436558485,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999902248382568,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999802709598811,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.001530921600710649
+          },
+          "test_loss": 0.001530921600710649,
+          "checkpoint_sha256": "b477ea218f2ef340aac1f3cd4c25e74c80c9e4ae8981ac772cfa8c55bdc9751d"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 7.12664794921875,
+          "best_val_loss": 0.0009429001365788281,
+          "sigma_b1": 0.9999897480010986,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999797941274693,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0014005317953687355
+          },
+          "test_loss": 0.0014005317953687355,
+          "checkpoint_sha256": "9022d1fd9869e03a4f080fcf1226e44311593f8217b262a60693a5c203f3bcd6"
+        },
+        {
+          "model_type": "ContinuousUndamped",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 7.201150894165039,
+          "best_val_loss": 0.0020136237144470215,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999902248382568,
+          "d_min_realized": 0.0,
+          "alpha_realized": -0.9999802113558189,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0031103963597810696
+          },
+          "test_loss": 0.0031103963597810696,
+          "checkpoint_sha256": "4b0e37ae7a12762e0aade0d09625fcae6bb40282ebc59be22045d94c90151823"
+        }
+      ],
+      "DiscreteGNN_L6": [
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 42,
+          "train_time_sec": 0.4299898147583008,
+          "best_val_loss": 0.00021709524298785254,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0003455029524614817
+          },
+          "test_loss": 0.0003455029524614817,
+          "checkpoint_sha256": "b83ac40f755c9869208a3bee97ea1668d7bd4ee5d50351417f922e1241fe0bcc"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 101,
+          "train_time_sec": 0.43724799156188965,
+          "best_val_loss": 0.00035144064895575866,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0005445796862175059
+          },
+          "test_loss": 0.0005445796862175059,
+          "checkpoint_sha256": "10efd31fcd0e76a92f3f0425bf585503ea07e642f0b349c97e5721bc1f793ace"
+        },
+        {
+          "model_type": "DiscreteGNN",
+          "nominal_damping": 0.0,
+          "seed": 777,
+          "train_time_sec": 0.44525599479675293,
+          "best_val_loss": 0.0002891373442253098,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0004828089258335712
+          },
+          "test_loss": 0.0004828089258335712,
+          "checkpoint_sha256": "e936521f1652e5d49a7daf7f2affd6f0ae08c677db2487e27b781ba6010b08d7"
+        }
+      ]
+    }
+  }
+}

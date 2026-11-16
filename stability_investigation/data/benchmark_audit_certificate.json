@@ -1,0 +1,55 @@
+{
+  "status": "PASSED",
+  "total_families": 3,
+  "total_graph_instances": 36,
+  "total_queries_audited": 7230,
+  "total_positive_queries": 3615,
+  "total_negative_queries": 3615,
+  "operator_norm_violations": 0,
+  "max_operator_norm_observed": 1.0000001192092896,
+  "label_discrepancies": 0,
+  "hop_discrepancies": 0,
+  "internal_duplicates": 0,
+  "balance_discrepancies": 0,
+  "instance_seed_collisions": 0,
+  "details_by_family": {
+    "chain_ladder": {
+      "instances": 12,
+      "queries": 2880,
+      "max_operator_norm": 0.9999999403953552,
+      "hop_bucket_counts": {
+        "2": 240,
+        "3": 240,
+        "5": 240,
+        "1": 240,
+        "6": 240,
+        "4": 240
+      }
+    },
+    "bottleneck": {
+      "instances": 12,
+      "queries": 2880,
+      "max_operator_norm": 1.0000001192092896,
+      "hop_bucket_counts": {
+        "5": 240,
+        "1": 240,
+        "3": 240,
+        "6": 240,
+        "4": 240,
+        "2": 240
+      }
+    },
+    "random_dag": {
+      "instances": 12,
+      "queries": 1470,
+      "max_operator_norm": 1.0000001192092896,
+      "hop_bucket_counts": {
+        "1": 240,
+        "2": 240,
+        "3": 240,
+        "4": 14,
+        "5": 1
+      }
+    }
+  }
+}

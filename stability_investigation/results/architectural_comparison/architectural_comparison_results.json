@@ -1,0 +1,2427 @@
+{
+  "study": "Phase 4 & 5 Controlled Architectural Comparison",
+  "date": "2026-11-16",
+  "families": {
+    "chain_ladder": {
+      "Baseline_Damped_1.5": [
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 42,
+          "train_time_sec": 13.27930212020874,
+          "best_val_loss": 0.001166373840533197,
+          "sigma_b1": 0.9999902844429016,
+          "sigma_b2": 0.9999902248382568,
+          "d_min_realized": 1.9523401260375977,
+          "alpha_realized": 0.9523596166614681,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013059742283076047
+          },
+          "test_loss": 0.0013059742283076047,
+          "checkpoint_sha256": "dda0d5a938782f5cb9f186199cd83f35ab8b52674b7ffc2014823b9d393025c0"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 101,
+          "train_time_sec": 13.67893123626709,
+          "best_val_loss": 0.0006318310624919832,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.9035706520080566,
+          "alpha_realized": 0.9035906790684294,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0006870858836919069
+          },
+          "test_loss": 0.0006870858836919069,
+          "checkpoint_sha256": "fc9c99dc488e036e0c64173efa7a3fdfc623c409a6fdef13000e836b13b6fd0a"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 777,
+          "train_time_sec": 14.287817001342773,
+          "best_val_loss": 0.0010316480766050518,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.922593355178833,
+          "alpha_realized": 0.9226136206553832,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011607012478634716
+          },
+          "test_loss": 0.0011607012478634716,
+          "checkpoint_sha256": "f2e0c58847cc8d59a92d6aee8e396352af78c80461c5edff9ed739cf31f03497"
+        }
+      ],
+      "Candidate_A_Tuned_1.05": [
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 42,
+          "train_time_sec": 15.631221055984497,
+          "best_val_loss": 0.0011072253109887242,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.5510971546173096,
+          "alpha_realized": 0.5511171816777143,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011775856837630272
+          },
+          "test_loss": 0.0011775856837630272,
+          "checkpoint_sha256": "2ae80902b6a00cd3f4194b36772d9fe648e4e55771958b58762ffb11e66ffecc"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 101,
+          "train_time_sec": 12.761961936950684,
+          "best_val_loss": 0.0005401082744356245,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.4166054725646973,
+          "alpha_realized": 0.41662561883316584,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005954817868769168
+          },
+          "test_loss": 0.0005954817868769168,
+          "checkpoint_sha256": "0f16d3bcfc1b29c4fec47ef4fb4a864a0a57f37cbd3517142b94fb4f4e0437b2"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 777,
+          "train_time_sec": 12.695640802383423,
+          "best_val_loss": 0.0009252911258954555,
+          "sigma_b1": 0.9999902248382568,
+          "sigma_b2": 0.9999895691871643,
+          "d_min_realized": 1.5157932043075562,
+          "alpha_realized": 0.5158134101801721,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010148863191716373
+          },
+          "test_loss": 0.0010148863191716373,
+          "checkpoint_sha256": "26f47d7e73bdd8e4d6eb9b610f013d346a1f9b8c91d681b48c15dcb2cbed2122"
+        }
+      ],
+      "Candidate_B_Multiscale_1.5": [
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 42,
+          "train_time_sec": 22.679038047790527,
+          "best_val_loss": 0.00048081338172778487,
+          "sigma_b1": 0.9999899566173553,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.8750154972076416,
+          "alpha_realized": 0.8750353454558835,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005164025467820465
+          },
+          "test_loss": 0.0005164025467820465,
+          "checkpoint_sha256": "5d7d4ac59ba874aa618a1e0987a7b96371da5e18a8011288f3d9403f5f3bd368"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 101,
+          "train_time_sec": 22.577405214309692,
+          "best_val_loss": 0.00047234114026650786,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999900758266449,
+          "d_min_realized": 1.869139313697815,
+          "alpha_realized": 0.869159245391694,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005074309767223895
+          },
+          "test_loss": 0.0005074309767223895,
+          "checkpoint_sha256": "e467d137cdfe572194e6bd218652fde98e748005739a97332bb3e7ced5081320"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 777,
+          "train_time_sec": 23.072731971740723,
+          "best_val_loss": 0.0004072906885994598,
+          "sigma_b1": 0.9999900162220001,
+          "sigma_b2": 0.9999898374080658,
+          "d_min_realized": 1.939009666442871,
+          "alpha_realized": 0.9390298007905358,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00045869091409258547
+          },
+          "test_loss": 0.00045869091409258547,
+          "checkpoint_sha256": "4fea6093e6b0e557a3cd52f1378736582c329559e9dec6498d3e788a246e21d8"
+        }
+      ],
+      "Candidate_C_Structural_1.5": [
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 42,
+          "train_time_sec": 13.017377614974976,
+          "best_val_loss": 0.0005406004784163088,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.9511816501617432,
+          "alpha_realized": 0.9512015580140201,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005721132620237768
+          },
+          "test_loss": 0.0005721132620237768,
+          "checkpoint_sha256": "ddbc9d11596f2fab49fa9db97fddd3f1c0322feaeaa03e935613b5ec2ac65c60"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 101,
+          "train_time_sec": 12.620933771133423,
+          "best_val_loss": 0.00026354685542173684,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999896883964539,
+          "d_min_realized": 1.961146354675293,
+          "alpha_realized": 0.9611667393599355,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0002786224125884473
+          },
+          "test_loss": 0.0002786224125884473,
+          "checkpoint_sha256": "e76ea9155031451804928aa8dc66268b77290da909aaf5ab84404170210917f7"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 777,
+          "train_time_sec": 12.644423007965088,
+          "best_val_loss": 0.0005799954233225435,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 2.0225272178649902,
+          "alpha_realized": 1.0225471853213222,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0006381965358741581
+          },
+          "test_loss": 0.0006381965358741581,
+          "checkpoint_sha256": "606e84dadf1dae2003f0d1092554d43a4a32ded96068c8aa292d259dec8b3657"
+        }
+      ],
+      "Baseline_Discrete_GNN6": [
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 42,
+          "train_time_sec": 0.8427810668945312,
+          "best_val_loss": 2.0345842131064273e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00017248799013032113
+          },
+          "test_loss": 0.00017248799013032113,
+          "checkpoint_sha256": "78f7bdb53ae3600a5e62cabec31570b284454b03f8da04a3134016c908d287c8"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 101,
+          "train_time_sec": 0.8283450603485107,
+          "best_val_loss": 3.734804704436101e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00021595375292235986
+          },
+          "test_loss": 0.00021595375292235986,
+          "checkpoint_sha256": "f6112cbfbe003b44d90c30ce4ad2cb0f4b62fa0cb6a51b3f55e4c39e799e96d7"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 777,
+          "train_time_sec": 0.8188149929046631,
+          "best_val_loss": 3.850677421723958e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0003134940197924152
+          },
+          "test_loss": 0.0003134940197924152,
+          "checkpoint_sha256": "d91267852fc344cb76d9250bdfd4ba146def5b242645200f6b48ee7a1b2d0432"
+        }
+      ]
+    },
+    "bottleneck": {
+      "Baseline_Damped_1.5": [
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 42,
+          "train_time_sec": 14.516540765762329,
+          "best_val_loss": 0.0010752081871032715,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8281962871551514,
+          "alpha_realized": 0.8282164334236164,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0013108891202136875
+          },
+          "test_loss": 0.0013108891202136875,
+          "checkpoint_sha256": "cab571fdc6c6f1b7c8f9a64c8c55e04df25943c8ca3ece3c46c5df1399cce80e"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 101,
+          "train_time_sec": 14.462141275405884,
+          "best_val_loss": 0.0008202210592571646,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.8469427824020386,
+          "alpha_realized": 0.8469627498583634,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0010586593532934784
+          },
+          "test_loss": 0.0010586593532934784,
+          "checkpoint_sha256": "1dd90157ad5ef5a24f4826bff9b5f2ad8f2077493a662dc07127616979374181"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 777,
+          "train_time_sec": 14.435590744018555,
+          "best_val_loss": 0.0012847467442043126,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8387761116027832,
+          "alpha_realized": 0.8387961982672039,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0017276156228035688
+          },
+          "test_loss": 0.0017276156228035688,
+          "checkpoint_sha256": "1a81376aa3c47f38744f674ba694627044d382e9fb8b96af22862a3eb348fb69"
+        }
+      ],
+      "Candidate_A_Tuned_1.05": [
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 42,
+          "train_time_sec": 14.438186168670654,
+          "best_val_loss": 0.0009736874781083316,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999901652336121,
+          "d_min_realized": 1.4270262718200684,
+          "alpha_realized": 0.4270460008601802,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0011471168603748084
+          },
+          "test_loss": 0.0011471168603748084,
+          "checkpoint_sha256": "e69f2cf5f5ee8bbcd2ad1cd0eb03e4f1c8a0e0aa0042c61a6db05a796ebcff6b"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 101,
+          "train_time_sec": 14.460460901260376,
+          "best_val_loss": 0.0006794699002057314,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.4283287525177002,
+          "alpha_realized": 0.4283487795780765,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0008588144555687904
+          },
+          "test_loss": 0.0008588144555687904,
+          "checkpoint_sha256": "2fa8d5b563909171bbc6679fb05d0a1eaf26200455f7b06dd0f44116da0c7502"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 777,
+          "train_time_sec": 14.482892036437988,
+          "best_val_loss": 0.0011554071679711342,
+          "sigma_b1": 0.9999901652336121,
+          "sigma_b2": 0.9999896883964539,
+          "d_min_realized": 1.4244815111160278,
+          "alpha_realized": 0.4245016573845497,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.00149992392398417
+          },
+          "test_loss": 0.00149992392398417,
+          "checkpoint_sha256": "cfa40c37c4315db97d7dc935b838c034595fb37224d53abc35b3df0e7c2e79da"
+        }
+      ],
+      "Candidate_B_Multiscale_1.5": [
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 42,
+          "train_time_sec": 25.72153401374817,
+          "best_val_loss": 0.0007142846006900072,
+          "sigma_b1": 0.9999901056289673,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.866836428642273,
+          "alpha_realized": 0.8668564914650845,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0008795972797088325
+          },
+          "test_loss": 0.0008795972797088325,
+          "checkpoint_sha256": "c78c771a3ac3223c6bf8d2781ef45a59727db0910193fbea4c9808fa128345e9"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 101,
+          "train_time_sec": 25.68575096130371,
+          "best_val_loss": 0.00038958442746661603,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8742492198944092,
+          "alpha_realized": 0.8742694138461105,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0005050143168773502
+          },
+          "test_loss": 0.0005050143168773502,
+          "checkpoint_sha256": "66c316f2d6505f6969694627c28cbf3b55f32003a0777af164414b7ba36c7d1e"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 777,
+          "train_time_sec": 25.613840103149414,
+          "best_val_loss": 0.0005353760934667662,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.999989777803421,
+          "d_min_realized": 1.8881053924560547,
+          "alpha_realized": 0.8881258009822979,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0007603174773976207
+          },
+          "test_loss": 0.0007603174773976207,
+          "checkpoint_sha256": "bdba0b9e320f3cb158bb7194fc62d243dd1a59266b46ee9cce083440a3f12b99"
+        }
+      ],
+      "Candidate_C_Structural_1.5": [
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 42,
+          "train_time_sec": 14.463665008544922,
+          "best_val_loss": 0.0008821981027722359,
+          "sigma_b1": 0.9999900460243225,
+          "sigma_b2": 0.9999903440475464,
+          "d_min_realized": 1.923631191253662,
+          "alpha_realized": 0.9236508010856781,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.001308754866477102
+          },
+          "test_loss": 0.001308754866477102,
+          "checkpoint_sha256": "3807991afae67d62ea90dce6378ff42a6d246d5f3db5c2efd9119eccf932dae0"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 101,
+          "train_time_sec": 14.48674464225769,
+          "best_val_loss": 0.0005736011371482164,
+          "sigma_b1": 0.9999901652336121,
+          "sigma_b2": 0.9999901056289673,
+          "d_min_realized": 1.9228410720825195,
+          "alpha_realized": 0.9228608011226314,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0008739503449760377
+          },
+          "test_loss": 0.0008739503449760377,
+          "checkpoint_sha256": "3fceaa5b805200de3d4f47b09239645749a1c3befcf347ee9ec8aa7cec568edc"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 777,
+          "train_time_sec": 14.447627782821655,
+          "best_val_loss": 0.001208597852382809,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 1.9333475828170776,
+          "alpha_realized": 0.9333679078976687,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 0.0019288980402052402
+          },
+          "test_loss": 0.0019288980402052402,
+          "checkpoint_sha256": "8439176c3be35a9a9149e985f1d63985188466d01c27a722a587022517239b32"
+        }
+      ],
+      "Baseline_Discrete_GNN6": [
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 42,
+          "train_time_sec": 1.0769448280334473,
+          "best_val_loss": 2.370748597968486e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 5.453682388179004e-05
+          },
+          "test_loss": 5.453682388179004e-05,
+          "checkpoint_sha256": "43f396b3799c7a62a84b97a96136332be288b05fe23a2e850b90b248ef5b389c"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 101,
+          "train_time_sec": 1.062323808670044,
+          "best_val_loss": 4.7489546886936296e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 9.792283817660064e-05
+          },
+          "test_loss": 9.792283817660064e-05,
+          "checkpoint_sha256": "cbad8ecbeca5f0d0addc742d2042eba045ddeb1e9fc877dba0502673d8e2357b"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 777,
+          "train_time_sec": 1.061171054840088,
+          "best_val_loss": 4.451939639693592e-05,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              }
+            },
+            "total_queries": 1200,
+            "total_pos": 600,
+            "total_neg": 600,
+            "test_loss": 7.625739235663786e-05
+          },
+          "test_loss": 7.625739235663786e-05,
+          "checkpoint_sha256": "4b7380f45d67cc348e10d0bb2b32324908442aca9ba22f66827d15dc645a4f49"
+        }
+      ]
+    },
+    "random_dag": {
+      "Baseline_Damped_1.5": [
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 42,
+          "train_time_sec": 7.525676012039185,
+          "best_val_loss": 0.00433169468306005,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 1.9741854667663574,
+          "alpha_realized": 0.9742056726388739,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004862319526879431
+          },
+          "test_loss": 0.004862319526879431,
+          "checkpoint_sha256": "10e43c0e0a626109f5fe04e4a9a54e293c9c23087d41d8603dfbbc9228339de7"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 101,
+          "train_time_sec": 7.6045823097229,
+          "best_val_loss": 0.0029122859705239534,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999900460243225,
+          "d_min_realized": 1.9571268558502197,
+          "alpha_realized": 0.9571468233065445,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0034007446805632054
+          },
+          "test_loss": 0.0034007446805632054,
+          "checkpoint_sha256": "76669aaa9850af467e528dfd92bd835fc10b29f93f2ef202abdcdaa7544cd2f0"
+        },
+        {
+          "architecture": "Baseline_Damped_1.5",
+          "seed": 777,
+          "train_time_sec": 7.558079957962036,
+          "best_val_loss": 0.014756519347429276,
+          "sigma_b1": 0.9999898076057434,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.8893533945083618,
+          "alpha_realized": 0.8893736599849156,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.01615024365895948
+          },
+          "test_loss": 0.01615024365895948,
+          "checkpoint_sha256": "8b77b04cc81e9168bb0511acbe165788e2a05ba2cbcc2ecb49392bebf5278c01"
+        }
+      ],
+      "Candidate_A_Tuned_1.05": [
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 42,
+          "train_time_sec": 7.544948101043701,
+          "best_val_loss": 0.0041525959968566895,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.9999898672103882,
+          "d_min_realized": 1.5398027896881104,
+          "alpha_realized": 0.5398229359565789,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.004537632756914895
+          },
+          "test_loss": 0.004537632756914895,
+          "checkpoint_sha256": "99c6a4cbf6b45e79a11e02b62b1de35ec71d5136fa7be52ee70a79c493769220"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 101,
+          "train_time_sec": 7.516085147857666,
+          "best_val_loss": 0.002562390174716711,
+          "sigma_b1": 0.9999899864196777,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 1.507080316543579,
+          "alpha_realized": 0.5071004032079998,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.002927819574584386
+          },
+          "test_loss": 0.002927819574584386,
+          "checkpoint_sha256": "aa50de725d888c4033dd49685251e007d6bf5242ebb15938936aa4fe433503fa"
+        },
+        {
+          "architecture": "Candidate_A_Tuned_1.05",
+          "seed": 777,
+          "train_time_sec": 7.562482833862305,
+          "best_val_loss": 0.012162938714027405,
+          "sigma_b1": 0.9999898672103882,
+          "sigma_b2": 0.9999898076057434,
+          "d_min_realized": 1.4504348039627075,
+          "alpha_realized": 0.45045512904329854,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.013257583748404082
+          },
+          "test_loss": 0.013257583748404082,
+          "checkpoint_sha256": "833d8057460ab6803bbcea11002bb46616b5986eeca6ece3968e422954aacd97"
+        }
+      ],
+      "Candidate_B_Multiscale_1.5": [
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 42,
+          "train_time_sec": 13.099012851715088,
+          "best_val_loss": 0.002104485291056335,
+          "sigma_b1": 0.9999900162220001,
+          "sigma_b2": 0.9999900162220001,
+          "d_min_realized": 1.956140398979187,
+          "alpha_realized": 0.9561603902771282,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0024546478722280787
+          },
+          "test_loss": 0.0024546478722280787,
+          "checkpoint_sha256": "af135c2492c51ac913d3c0c82b01fe6874ba35579e476838b7c417a4194eadff"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 101,
+          "train_time_sec": 12.946792125701904,
+          "best_val_loss": 0.0018252648296765983,
+          "sigma_b1": 0.9999900162220001,
+          "sigma_b2": 0.9999899566173553,
+          "d_min_realized": 1.927600383758545,
+          "alpha_realized": 0.9276204585021517,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0022092154975254814
+          },
+          "test_loss": 0.0022092154975254814,
+          "checkpoint_sha256": "3b0f0ce852f7ea9fb1ca904fd0030cf66cf6109eb5933916c98449e8c8aa0397"
+        },
+        {
+          "architecture": "Candidate_B_Multiscale_1.5",
+          "seed": 777,
+          "train_time_sec": 13.389512777328491,
+          "best_val_loss": 0.002417829819023609,
+          "sigma_b1": 0.9999900758266449,
+          "sigma_b2": 0.9999898374080658,
+          "d_min_realized": 1.9651069641113281,
+          "alpha_realized": 0.9651270388549584,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0028403122015841693
+          },
+          "test_loss": 0.0028403122015841693,
+          "checkpoint_sha256": "d25ac0c47da40745c17747ecd7367a51f17d7a69bd3a8bf0b7602560e96ce40f"
+        }
+      ],
+      "Candidate_C_Structural_1.5": [
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 42,
+          "train_time_sec": 7.8113439083099365,
+          "best_val_loss": 0.0012137196608819067,
+          "sigma_b1": 0.9999904036521912,
+          "sigma_b2": 0.9999902248382568,
+          "d_min_realized": 2.0520896911621094,
+          "alpha_realized": 1.0521090625778555,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0010683566359077374
+          },
+          "test_loss": 0.0010683566359077374,
+          "checkpoint_sha256": "9f8a3d95192ead98fb2e716ae883ba78f9347470261cbec1f34b66e6732935cd"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 101,
+          "train_time_sec": 7.869973182678223,
+          "best_val_loss": 0.0006862535083200783,
+          "sigma_b1": 0.999989926815033,
+          "sigma_b2": 0.999989926815033,
+          "d_min_realized": 2.0391039848327637,
+          "alpha_realized": 1.0391241311012287,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0006043464756138357
+          },
+          "test_loss": 0.0006043464756138357,
+          "checkpoint_sha256": "2c56b8dfd7b24d4d172c4f54c89e2e0602e0a51318717c691c8cf27cea995075"
+        },
+        {
+          "architecture": "Candidate_C_Structural_1.5",
+          "seed": 777,
+          "train_time_sec": 7.747378349304199,
+          "best_val_loss": 0.0012178327306173742,
+          "sigma_b1": 0.999903678894043,
+          "sigma_b2": 0.9999899864196777,
+          "d_min_realized": 2.050264358520508,
+          "alpha_realized": 1.050370692242268,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0010655165495738
+          },
+          "test_loss": 0.0010655165495738,
+          "checkpoint_sha256": "fc49546594abc432d146c0203846019f5f44fb81d5987c0ce81284a412d2c648"
+        }
+      ],
+      "Baseline_Discrete_GNN6": [
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 42,
+          "train_time_sec": 0.9415159225463867,
+          "best_val_loss": 0.00021709524298785254,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0003455029524614817
+          },
+          "test_loss": 0.0003455029524614817,
+          "checkpoint_sha256": "7ba4c0332464817ac84bfbef88c61b1f5b2f5710a93dd0aee81f4d9b9725c9a9"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 101,
+          "train_time_sec": 0.7925260066986084,
+          "best_val_loss": 0.00035144064895575866,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0005445796862175059
+          },
+          "test_loss": 0.0005445796862175059,
+          "checkpoint_sha256": "7e22d9c291a9ef2a39e93726439b15ee601b7ea44112e744b26ab7a342fdf13f"
+        },
+        {
+          "architecture": "Baseline_Discrete_GNN6",
+          "seed": 777,
+          "train_time_sec": 0.8854191303253174,
+          "best_val_loss": 0.0002891373442253098,
+          "sigma_b1": 0.0,
+          "sigma_b2": 0.0,
+          "d_min_realized": 0.0,
+          "alpha_realized": 0.0,
+          "test_metrics": {
+            "accuracy": 1.0,
+            "specificity": 1.0,
+            "overall_recall": 1.0,
+            "hop_recalls": {
+              "1": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "2": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "3": {
+                "correct": 100,
+                "total": 100,
+                "recall": 1.0
+              },
+              "4": {
+                "correct": 7,
+                "total": 7,
+                "recall": 1.0
+              },
+              "5": {
+                "correct": 1,
+                "total": 1,
+                "recall": 1.0
+              },
+              "6": {
+                "correct": 0,
+                "total": 0,
+                "recall": 0.0
+              }
+            },
+            "total_queries": 616,
+            "total_pos": 308,
+            "total_neg": 308,
+            "test_loss": 0.0004828089258335712
+          },
+          "test_loss": 0.0004828089258335712,
+          "checkpoint_sha256": "67b4409a2c14d229a62a2a6c9e5b9de1fb0c6d890315c929e65bab800bffe43d"
+        }
+      ]
+    }
+  }
+}

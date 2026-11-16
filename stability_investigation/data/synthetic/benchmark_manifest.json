@@ -1,0 +1,622 @@
+{
+  "benchmark_name": "Controlled Synthetic Reachability Suite (Phase 2)",
+  "protocol": "Strict Graph-Level Split with Zero Replacement Sampling",
+  "families": {
+    "chain_ladder": {
+      "splits": {
+        "train": [
+          {
+            "file_name": "train_inst_0_seed_101.pt",
+            "instance_idx": 0,
+            "seed": 101,
+            "num_nodes": 40,
+            "num_edges": 45,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "2": 20,
+              "3": 20,
+              "5": 20,
+              "1": 20,
+              "6": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "train_inst_1_seed_102.pt",
+            "instance_idx": 1,
+            "seed": 102,
+            "num_nodes": 40,
+            "num_edges": 52,
+            "total_queries": 240,
+            "hop_distribution": {
+              "3": 20,
+              "0": 120,
+              "2": 20,
+              "4": 20,
+              "1": 20,
+              "5": 20,
+              "6": 20
+            }
+          },
+          {
+            "file_name": "train_inst_2_seed_103.pt",
+            "instance_idx": 2,
+            "seed": 103,
+            "num_nodes": 40,
+            "num_edges": 56,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "3": 20,
+              "4": 20,
+              "6": 20,
+              "2": 20,
+              "5": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "train_inst_3_seed_104.pt",
+            "instance_idx": 3,
+            "seed": 104,
+            "num_nodes": 40,
+            "num_edges": 48,
+            "total_queries": 240,
+            "hop_distribution": {
+              "1": 20,
+              "0": 120,
+              "5": 20,
+              "6": 20,
+              "3": 20,
+              "2": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "train_inst_4_seed_105.pt",
+            "instance_idx": 4,
+            "seed": 105,
+            "num_nodes": 40,
+            "num_edges": 45,
+            "total_queries": 240,
+            "hop_distribution": {
+              "2": 20,
+              "0": 120,
+              "3": 20,
+              "6": 20,
+              "5": 20,
+              "1": 20,
+              "4": 20
+            }
+          }
+        ],
+        "val": [
+          {
+            "file_name": "val_inst_0_seed_201.pt",
+            "instance_idx": 0,
+            "seed": 201,
+            "num_nodes": 40,
+            "num_edges": 52,
+            "total_queries": 240,
+            "hop_distribution": {
+              "5": 20,
+              "0": 120,
+              "1": 20,
+              "4": 20,
+              "3": 20,
+              "2": 20,
+              "6": 20
+            }
+          },
+          {
+            "file_name": "val_inst_1_seed_202.pt",
+            "instance_idx": 1,
+            "seed": 202,
+            "num_nodes": 40,
+            "num_edges": 46,
+            "total_queries": 240,
+            "hop_distribution": {
+              "4": 20,
+              "3": 20,
+              "6": 20,
+              "0": 120,
+              "1": 20,
+              "2": 20,
+              "5": 20
+            }
+          }
+        ],
+        "test": [
+          {
+            "file_name": "test_inst_0_seed_301.pt",
+            "instance_idx": 0,
+            "seed": 301,
+            "num_nodes": 40,
+            "num_edges": 53,
+            "total_queries": 240,
+            "hop_distribution": {
+              "2": 20,
+              "6": 20,
+              "5": 20,
+              "1": 20,
+              "0": 120,
+              "3": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "test_inst_1_seed_302.pt",
+            "instance_idx": 1,
+            "seed": 302,
+            "num_nodes": 40,
+            "num_edges": 49,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "3": 20,
+              "2": 20,
+              "5": 20,
+              "6": 20,
+              "1": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "test_inst_2_seed_303.pt",
+            "instance_idx": 2,
+            "seed": 303,
+            "num_nodes": 40,
+            "num_edges": 51,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "3": 20,
+              "2": 20,
+              "5": 20,
+              "6": 20,
+              "4": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "test_inst_3_seed_304.pt",
+            "instance_idx": 3,
+            "seed": 304,
+            "num_nodes": 40,
+            "num_edges": 55,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "5": 20,
+              "3": 20,
+              "2": 20,
+              "6": 20,
+              "4": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "test_inst_4_seed_305.pt",
+            "instance_idx": 4,
+            "seed": 305,
+            "num_nodes": 40,
+            "num_edges": 52,
+            "total_queries": 240,
+            "hop_distribution": {
+              "6": 20,
+              "4": 20,
+              "3": 20,
+              "0": 120,
+              "2": 20,
+              "1": 20,
+              "5": 20
+            }
+          }
+        ]
+      }
+    },
+    "bottleneck": {
+      "splits": {
+        "train": [
+          {
+            "file_name": "train_inst_0_seed_111.pt",
+            "instance_idx": 0,
+            "seed": 111,
+            "num_nodes": 48,
+            "num_edges": 155,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "5": 20,
+              "1": 20,
+              "3": 20,
+              "6": 20,
+              "4": 20,
+              "2": 20
+            }
+          },
+          {
+            "file_name": "train_inst_1_seed_112.pt",
+            "instance_idx": 1,
+            "seed": 112,
+            "num_nodes": 48,
+            "num_edges": 142,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "3": 20,
+              "2": 20,
+              "5": 20,
+              "1": 20,
+              "6": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "train_inst_2_seed_113.pt",
+            "instance_idx": 2,
+            "seed": 113,
+            "num_nodes": 48,
+            "num_edges": 153,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "6": 20,
+              "5": 20,
+              "1": 20,
+              "2": 20,
+              "3": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "train_inst_3_seed_114.pt",
+            "instance_idx": 3,
+            "seed": 114,
+            "num_nodes": 48,
+            "num_edges": 145,
+            "total_queries": 240,
+            "hop_distribution": {
+              "5": 20,
+              "4": 20,
+              "0": 120,
+              "6": 20,
+              "3": 20,
+              "2": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "train_inst_4_seed_115.pt",
+            "instance_idx": 4,
+            "seed": 115,
+            "num_nodes": 48,
+            "num_edges": 143,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "6": 20,
+              "3": 20,
+              "1": 20,
+              "2": 20,
+              "4": 20,
+              "5": 20
+            }
+          }
+        ],
+        "val": [
+          {
+            "file_name": "val_inst_0_seed_211.pt",
+            "instance_idx": 0,
+            "seed": 211,
+            "num_nodes": 48,
+            "num_edges": 139,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "5": 20,
+              "2": 20,
+              "6": 20,
+              "1": 20,
+              "4": 20,
+              "3": 20
+            }
+          },
+          {
+            "file_name": "val_inst_1_seed_212.pt",
+            "instance_idx": 1,
+            "seed": 212,
+            "num_nodes": 48,
+            "num_edges": 137,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "6": 20,
+              "3": 20,
+              "5": 20,
+              "4": 20,
+              "2": 20,
+              "1": 20
+            }
+          }
+        ],
+        "test": [
+          {
+            "file_name": "test_inst_0_seed_311.pt",
+            "instance_idx": 0,
+            "seed": 311,
+            "num_nodes": 48,
+            "num_edges": 152,
+            "total_queries": 240,
+            "hop_distribution": {
+              "2": 20,
+              "0": 120,
+              "6": 20,
+              "5": 20,
+              "1": 20,
+              "3": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "test_inst_1_seed_312.pt",
+            "instance_idx": 1,
+            "seed": 312,
+            "num_nodes": 48,
+            "num_edges": 147,
+            "total_queries": 240,
+            "hop_distribution": {
+              "2": 20,
+              "6": 20,
+              "0": 120,
+              "3": 20,
+              "4": 20,
+              "5": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "test_inst_2_seed_313.pt",
+            "instance_idx": 2,
+            "seed": 313,
+            "num_nodes": 48,
+            "num_edges": 130,
+            "total_queries": 240,
+            "hop_distribution": {
+              "2": 20,
+              "0": 120,
+              "5": 20,
+              "3": 20,
+              "1": 20,
+              "4": 20,
+              "6": 20
+            }
+          },
+          {
+            "file_name": "test_inst_3_seed_314.pt",
+            "instance_idx": 3,
+            "seed": 314,
+            "num_nodes": 48,
+            "num_edges": 146,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "3": 20,
+              "5": 20,
+              "2": 20,
+              "6": 20,
+              "1": 20,
+              "4": 20
+            }
+          },
+          {
+            "file_name": "test_inst_4_seed_315.pt",
+            "instance_idx": 4,
+            "seed": 315,
+            "num_nodes": 48,
+            "num_edges": 155,
+            "total_queries": 240,
+            "hop_distribution": {
+              "0": 120,
+              "6": 20,
+              "1": 20,
+              "4": 20,
+              "3": 20,
+              "2": 20,
+              "5": 20
+            }
+          }
+        ]
+      }
+    },
+    "random_dag": {
+      "splits": {
+        "train": [
+          {
+            "file_name": "train_inst_0_seed_121.pt",
+            "instance_idx": 0,
+            "seed": 121,
+            "num_nodes": 42,
+            "num_edges": 203,
+            "total_queries": 122,
+            "hop_distribution": {
+              "0": 61,
+              "1": 20,
+              "2": 20,
+              "3": 20,
+              "4": 1
+            }
+          },
+          {
+            "file_name": "train_inst_1_seed_122.pt",
+            "instance_idx": 1,
+            "seed": 122,
+            "num_nodes": 42,
+            "num_edges": 208,
+            "total_queries": 122,
+            "hop_distribution": {
+              "3": 20,
+              "0": 61,
+              "2": 20,
+              "1": 20,
+              "4": 1
+            }
+          },
+          {
+            "file_name": "train_inst_2_seed_123.pt",
+            "instance_idx": 2,
+            "seed": 123,
+            "num_nodes": 42,
+            "num_edges": 188,
+            "total_queries": 122,
+            "hop_distribution": {
+              "1": 20,
+              "0": 61,
+              "2": 20,
+              "3": 20,
+              "4": 1
+            }
+          },
+          {
+            "file_name": "train_inst_3_seed_124.pt",
+            "instance_idx": 3,
+            "seed": 124,
+            "num_nodes": 42,
+            "num_edges": 200,
+            "total_queries": 124,
+            "hop_distribution": {
+              "0": 62,
+              "2": 20,
+              "1": 20,
+              "3": 20,
+              "4": 2
+            }
+          },
+          {
+            "file_name": "train_inst_4_seed_125.pt",
+            "instance_idx": 4,
+            "seed": 125,
+            "num_nodes": 42,
+            "num_edges": 193,
+            "total_queries": 120,
+            "hop_distribution": {
+              "1": 20,
+              "0": 60,
+              "2": 20,
+              "3": 20
+            }
+          }
+        ],
+        "val": [
+          {
+            "file_name": "val_inst_0_seed_221.pt",
+            "instance_idx": 0,
+            "seed": 221,
+            "num_nodes": 42,
+            "num_edges": 206,
+            "total_queries": 122,
+            "hop_distribution": {
+              "0": 61,
+              "3": 20,
+              "2": 20,
+              "1": 20,
+              "4": 1
+            }
+          },
+          {
+            "file_name": "val_inst_1_seed_222.pt",
+            "instance_idx": 1,
+            "seed": 222,
+            "num_nodes": 42,
+            "num_edges": 187,
+            "total_queries": 122,
+            "hop_distribution": {
+              "2": 20,
+              "0": 61,
+              "1": 20,
+              "3": 20,
+              "4": 1
+            }
+          }
+        ],
+        "test": [
+          {
+            "file_name": "test_inst_0_seed_321.pt",
+            "instance_idx": 0,
+            "seed": 321,
+            "num_nodes": 42,
+            "num_edges": 217,
+            "total_queries": 126,
+            "hop_distribution": {
+              "0": 63,
+              "2": 20,
+              "1": 20,
+              "3": 20,
+              "4": 3
+            }
+          },
+          {
+            "file_name": "test_inst_1_seed_322.pt",
+            "instance_idx": 1,
+            "seed": 322,
+            "num_nodes": 42,
+            "num_edges": 206,
+            "total_queries": 120,
+            "hop_distribution": {
+              "3": 20,
+              "0": 60,
+              "2": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "test_inst_2_seed_323.pt",
+            "instance_idx": 2,
+            "seed": 323,
+            "num_nodes": 42,
+            "num_edges": 194,
+            "total_queries": 124,
+            "hop_distribution": {
+              "3": 20,
+              "2": 20,
+              "0": 62,
+              "1": 20,
+              "4": 2
+            }
+          },
+          {
+            "file_name": "test_inst_3_seed_324.pt",
+            "instance_idx": 3,
+            "seed": 324,
+            "num_nodes": 42,
+            "num_edges": 180,
+            "total_queries": 120,
+            "hop_distribution": {
+              "0": 60,
+              "2": 20,
+              "3": 20,
+              "1": 20
+            }
+          },
+          {
+            "file_name": "test_inst_4_seed_325.pt",
+            "instance_idx": 4,
+            "seed": 325,
+            "num_nodes": 42,
+            "num_edges": 199,
+            "total_queries": 126,
+            "hop_distribution": {
+              "1": 20,
+              "0": 63,
+              "2": 20,
+              "3": 20,
+              "5": 1,
+              "4": 2
+            }
+          }
+        ]
+      }
+    }
+  }
+}

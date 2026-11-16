@@ -1,0 +1,873 @@
+{
+  "evaluation_title": "Phase 3 Damping Intervention Held-Out Test Loss Audit",
+  "timestamp": "2026-11-16",
+  "command": "python3 stability_investigation/scripts/evaluate_and_persist_test_loss.py",
+  "dataset_manifest_sha256": "8d5b02c591989e49a168a662727dd51ede02f6778dde643aca7c3d584e316342",
+  "test_dataset_files": {
+    "chain_ladder/test_inst_0_seed_301.pt": "4fbe1f4ddcf8478b1b7c7651e63e9c7fc9175f76bec730715c34fa49e5a91d17",
+    "chain_ladder/test_inst_1_seed_302.pt": "bdd5c6b307621d0810c2e405cd1ccac182a19e02f88bebfc33df103f0bb98919",
+    "chain_ladder/test_inst_2_seed_303.pt": "d11b8a68e2448d81ee077d5530d882be29ad8235b23825f1c58ac50bb2ea5a0c",
+    "chain_ladder/test_inst_3_seed_304.pt": "e6882f58cb3fc0687cec7f768d15d29df7c2dfb6dae5d50dd476173d82876252",
+    "chain_ladder/test_inst_4_seed_305.pt": "6b32384e2092a6587c78e1efe78daa038c58c280cf44169317c18e1de9c9fce0",
+    "bottleneck/test_inst_0_seed_311.pt": "d8cb9697db76feec2e25164e4f6e840aafdca3a07fc9f4051eb1ef3065ba4cf7",
+    "bottleneck/test_inst_1_seed_312.pt": "4eb6163472eddc21eb3b9ac5fef556923189eea44d4b5356f46456cbd4d1dd35",
+    "bottleneck/test_inst_2_seed_313.pt": "129fb00e6721a8f117bbcb4cd9a7b5a105a077d2aad814f0d08ed627db1e6f31",
+    "bottleneck/test_inst_3_seed_314.pt": "388f1bf39ee94aaa3b5b316f223f2905cf89bde17fa3bf086f8c4832d571d3d5",
+    "bottleneck/test_inst_4_seed_315.pt": "55a8542f388a16d6651e6a41d199523f1dd8884c297a71f0a7a2ab4a5416a59f",
+    "random_dag/test_inst_0_seed_321.pt": "6a881561356c3e4dd1abc2e6c099e4fbc237641ee9a9f9e2aee9ac2d3f697206",
+    "random_dag/test_inst_1_seed_322.pt": "4f7d8f9ff82ac1e1fc418dd158c6381006333e4b16efca9c4d75b969769fdaa3",
+    "random_dag/test_inst_2_seed_323.pt": "de7eb0ece23e1d908b51ca6f1e87b2efe1bb159b96e7734000d9814332d2430d",
+    "random_dag/test_inst_3_seed_324.pt": "a238c2e305a7d8ad044efea90c18bc483c95566be45c1db40e114f434125b847",
+    "random_dag/test_inst_4_seed_325.pt": "4e629207b73c4dff1c23dcbd897327d1d159067c38e3bebd8bb434827a26e716"
+  },
+  "checkpoints": {
+    "chain_ladder_ContinuousDamped_dmin_0.50_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 42,
+      "sha256": "8ec7a319285e9b59ec66725d614cd643204d5122c6fac6ea5c3a4f9d521c77c8",
+      "test_loss": 0.0010355836246162653,
+      "best_val_loss": 0.000971788598690182
+    },
+    "chain_ladder_ContinuousDamped_dmin_0.50_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 101,
+      "sha256": "66d9a0d6cc12895d4f86ac68ba3768c9fc16d2e79d7bb8374f1304fe3435f6e8",
+      "test_loss": 0.00042899326654151083,
+      "best_val_loss": 0.00032208765333052725
+    },
+    "chain_ladder_ContinuousDamped_dmin_0.50_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 777,
+      "sha256": "89c27b7819f311dad8ff6568637e4bfde0b6319778dc420c733312123f421959",
+      "test_loss": 0.0008173696114681661,
+      "best_val_loss": 0.0007317063282243907
+    },
+    "chain_ladder_ContinuousDamped_dmin_0.80_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 42,
+      "sha256": "a302b9468f1307c29d82a483bf387f91de1d36acc369e0213fb09ed6cbc55770",
+      "test_loss": 0.0010136976838111878,
+      "best_val_loss": 0.0009726381103973836
+    },
+    "chain_ladder_ContinuousDamped_dmin_0.80_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 101,
+      "sha256": "c9fd0b2fdf1a9cc01b5153348b2fdf9ac5a32705b12e6e8a180edbaf7261775f",
+      "test_loss": 0.0005283686681650579,
+      "best_val_loss": 0.00045842416875530034
+    },
+    "chain_ladder_ContinuousDamped_dmin_0.80_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 777,
+      "sha256": "400780b646e7d7fd99eb8a44eae802e6c29ec143e475b820b6a156e3144518b1",
+      "test_loss": 0.0009323284146375954,
+      "best_val_loss": 0.0008563282317481935
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.05_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 42,
+      "sha256": "c77193a1f12faba0437433ef2ad7a560a6916d1aba352b3f604982b39fd63182",
+      "test_loss": 0.0011775856837630272,
+      "best_val_loss": 0.0011072253109887242
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.05_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 101,
+      "sha256": "a80a7052cf201962f82a48291b9d86e92237c7f8ecc0c0e82f42e90c30e9d21e",
+      "test_loss": 0.0005954817868769168,
+      "best_val_loss": 0.0005401082744356245
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.05_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 777,
+      "sha256": "1f92f95eaab7f1dc60490c53653cd4434731eb2bbaac78a1c16f92ce409d8653",
+      "test_loss": 0.0010148863191716373,
+      "best_val_loss": 0.0009252911258954555
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.20_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 42,
+      "sha256": "297666238aa0108cbfd4d9021f6f2810560377f8a71d5bcc948d9ef42687167d",
+      "test_loss": 0.0012186575215309859,
+      "best_val_loss": 0.0011267816298641264
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.20_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 101,
+      "sha256": "4b084eb3b3c1ee432c7427497a3025d7e1fad124e4d0421c060c9bdbb22b4917",
+      "test_loss": 0.0006277362466789782,
+      "best_val_loss": 0.0005752040888182819
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.20_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 777,
+      "sha256": "94a01317c3671ec35bfa1538abaaae725c170e0fe9ec89f4a5f2ffdfbfc9ecb5",
+      "test_loss": 0.0010631215176545084,
+      "best_val_loss": 0.00096144262352027
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.50_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 42,
+      "sha256": "4e37393a9ee91246abc3f04aa1d04469ff2485893b96d981eb0b4157b0e23323",
+      "test_loss": 0.0013059742283076047,
+      "best_val_loss": 0.001166373840533197
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.50_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 101,
+      "sha256": "82244a12f854732e2bb4017c340112fb95d870fb5eae601f20d1b721370298b3",
+      "test_loss": 0.0006870858836919069,
+      "best_val_loss": 0.0006318310624919832
+    },
+    "chain_ladder_ContinuousDamped_dmin_1.50_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 777,
+      "sha256": "d1551382a4ebcd80efdcad0ebc97e23ac84e195fa2703029512d53242ea2d557",
+      "test_loss": 0.0011607012478634716,
+      "best_val_loss": 0.0010316480766050518
+    },
+    "chain_ladder_ContinuousDamped_dmin_2.00_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 42,
+      "sha256": "5c79172cca58b16064489ab1dfbd7a2910adf73e835369f2aaba53a931be7162",
+      "test_loss": 0.0015324223786592484,
+      "best_val_loss": 0.0012862191651947796
+    },
+    "chain_ladder_ContinuousDamped_dmin_2.00_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 101,
+      "sha256": "1d1159b924db62bb8af3e8caa9d4dbf849a1cc66c23d36713c07ae4149a5d8e4",
+      "test_loss": 0.000804598955437541,
+      "best_val_loss": 0.0007312858360819519
+    },
+    "chain_ladder_ContinuousDamped_dmin_2.00_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 777,
+      "sha256": "28ab8690bdc39b373941f4d2da209fdc54d094c8944ba257a472eb2f46a4a439",
+      "test_loss": 0.0013331243302673102,
+      "best_val_loss": 0.001153965131379664
+    },
+    "chain_ladder_ContinuousUndamped_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousUndamped",
+      "seed": 42,
+      "sha256": "9220b7fd14f7f62e87e19fd8438f686d1da643b3021a0616731c0f4f4e291c89",
+      "test_loss": 0.00013577744321082718,
+      "best_val_loss": 3.816860589722637e-05
+    },
+    "chain_ladder_ContinuousUndamped_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousUndamped",
+      "seed": 101,
+      "sha256": "d6e31d9fabaee3798f936914b8f15c517bf28ee67a7446c76ead9fdfd89c006e",
+      "test_loss": 0.00015636754760635086,
+      "best_val_loss": 4.5040080294711515e-05
+    },
+    "chain_ladder_ContinuousUndamped_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "ContinuousUndamped",
+      "seed": 777,
+      "sha256": "c305ba00c0d77d84917fc6b1e0654942c1baddc4312a53a074f3c014242c7393",
+      "test_loss": 0.00034584090462885797,
+      "best_val_loss": 8.527686804882251e-05
+    },
+    "chain_ladder_DiscreteGNN_L6_seed_42.pt": {
+      "family": "chain_ladder",
+      "config": "DiscreteGNN_L6",
+      "seed": 42,
+      "sha256": "2302da5e0e0fb3c1bf428ce0ab0aad8ae3a228c1d62ebe0c7889abeaf0f2674b",
+      "test_loss": 0.00017248799013032113,
+      "best_val_loss": 2.0345842131064273e-05
+    },
+    "chain_ladder_DiscreteGNN_L6_seed_101.pt": {
+      "family": "chain_ladder",
+      "config": "DiscreteGNN_L6",
+      "seed": 101,
+      "sha256": "a68da3229c9ec7665a2560b3984ed8d665d7414a5c77b63c1307966ccdb5c1d6",
+      "test_loss": 0.00021595375292235986,
+      "best_val_loss": 3.734804704436101e-05
+    },
+    "chain_ladder_DiscreteGNN_L6_seed_777.pt": {
+      "family": "chain_ladder",
+      "config": "DiscreteGNN_L6",
+      "seed": 777,
+      "sha256": "985509723077976c862f7f966edacb69417b1d751de89c69729693cfbd51fb73",
+      "test_loss": 0.0003134940197924152,
+      "best_val_loss": 3.850677421723958e-05
+    },
+    "bottleneck_ContinuousDamped_dmin_0.50_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 42,
+      "sha256": "d328f83634dded7ea706a67575042504f0a1f0881d089eddf25222b22515bc0c",
+      "test_loss": 0.000913439760915935,
+      "best_val_loss": 0.0008045262075029314
+    },
+    "bottleneck_ContinuousDamped_dmin_0.50_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 101,
+      "sha256": "f88caec0a206f08556e5ea3cbe4e679b573f52dcb8e20bf686237a50658d6ce5",
+      "test_loss": 0.0006802243064157665,
+      "best_val_loss": 0.0005337408219929785
+    },
+    "bottleneck_ContinuousDamped_dmin_0.50_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 777,
+      "sha256": "586ae5ae4aec99e6a95899e6d0b708c594206086daa2115210e56cbd790614e5",
+      "test_loss": 0.0012015508022159339,
+      "best_val_loss": 0.001000853138975799
+    },
+    "bottleneck_ContinuousDamped_dmin_0.80_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 42,
+      "sha256": "e832de7dca705d8c43e39002d9fa47dc54c70b15c62144f7acd7fed7c77717f7",
+      "test_loss": 0.0010839223396033049,
+      "best_val_loss": 0.0009241806692443788
+    },
+    "bottleneck_ContinuousDamped_dmin_0.80_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 101,
+      "sha256": "ab5a0994c585fbbe74034700af9dae576b809950f30a59759cb54d86005aacec",
+      "test_loss": 0.0007710220757871866,
+      "best_val_loss": 0.0006138630560599267
+    },
+    "bottleneck_ContinuousDamped_dmin_0.80_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 777,
+      "sha256": "0cf4702db33622558e61d14e7cd560a1591f6cff2db0dd92630d9b1f2974dd16",
+      "test_loss": 0.0013675455236807465,
+      "best_val_loss": 0.0010838360176421702
+    },
+    "bottleneck_ContinuousDamped_dmin_1.05_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 42,
+      "sha256": "6e25dcf4218dc31ab27b1281ede1dec17791a2c684d16ae4839b29f9a79e8ae4",
+      "test_loss": 0.0011471168603748084,
+      "best_val_loss": 0.0009736874781083316
+    },
+    "bottleneck_ContinuousDamped_dmin_1.05_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 101,
+      "sha256": "5a3fb1776b8ef624f675a1d94ff46f02a0003a9fbc0ea98c29b60801ec40797e",
+      "test_loss": 0.0008588144555687904,
+      "best_val_loss": 0.0006794699002057314
+    },
+    "bottleneck_ContinuousDamped_dmin_1.05_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 777,
+      "sha256": "3bfc8950dca3ce31167676dd662ed4bb422175214e8d2b67d09a8d1c7a2f7bb6",
+      "test_loss": 0.00149992392398417,
+      "best_val_loss": 0.0011554071679711342
+    },
+    "bottleneck_ContinuousDamped_dmin_1.20_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 42,
+      "sha256": "e4be7a385890a33f39cec5ce075d73089985122076462447c03a32972f78b1e1",
+      "test_loss": 0.0013865047367289662,
+      "best_val_loss": 0.0011041282559745014
+    },
+    "bottleneck_ContinuousDamped_dmin_1.20_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 101,
+      "sha256": "3ab82bccf0ed0759bb03481e9d5731c63c6f1c0028e52cdb40a8f6aeb03f8200",
+      "test_loss": 0.0009198364918120205,
+      "best_val_loss": 0.0007229204056784511
+    },
+    "bottleneck_ContinuousDamped_dmin_1.20_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 777,
+      "sha256": "20483cbaa02e2a008854442423fe3518a5fc3b40ceed1f8e4767c9c3faa04658",
+      "test_loss": 0.0015792666003108025,
+      "best_val_loss": 0.0012003352749161422
+    },
+    "bottleneck_ContinuousDamped_dmin_1.50_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 42,
+      "sha256": "d58dba25d225b8a5dd07bd94f35a0e8288a6a813c9f8ebba4cb7fc19fb140b30",
+      "test_loss": 0.0013108891202136875,
+      "best_val_loss": 0.0010752081871032715
+    },
+    "bottleneck_ContinuousDamped_dmin_1.50_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 101,
+      "sha256": "c6610091914aac4061879b6d935916683d8c69ff47bdb545df55809bdb46334f",
+      "test_loss": 0.0010586593532934784,
+      "best_val_loss": 0.0008202210592571646
+    },
+    "bottleneck_ContinuousDamped_dmin_1.50_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 777,
+      "sha256": "9be381611ccc4cd79538811dcf7947ffa090e1da47107dba350f1572a71f1dd8",
+      "test_loss": 0.0017276156228035688,
+      "best_val_loss": 0.0012847467442043126
+    },
+    "bottleneck_ContinuousDamped_dmin_2.00_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 42,
+      "sha256": "b8fa22946b67c5e36b9290e761b53747d74782b88e712e8add7607dcfa37bb34",
+      "test_loss": 0.001583711546845734,
+      "best_val_loss": 0.001248390122782439
+    },
+    "bottleneck_ContinuousDamped_dmin_2.00_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 101,
+      "sha256": "1faf6eb436f1eb557c24a35681fb80dd53c1474317a54541a4a30f4524fceeee",
+      "test_loss": 0.001339313737116754,
+      "best_val_loss": 0.0010119624203070998
+    },
+    "bottleneck_ContinuousDamped_dmin_2.00_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 777,
+      "sha256": "f4ef5a96caa78183a039079754e94164bc76b0bbd8ad2703b4f1993e7f06b09f",
+      "test_loss": 0.0020020889583975076,
+      "best_val_loss": 0.001446389185730368
+    },
+    "bottleneck_ContinuousUndamped_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousUndamped",
+      "seed": 42,
+      "sha256": "3d963ac2f3ac2cd6f035710b5ab6b8fa2f982da43c4d6a1f12f83547bd75deb9",
+      "test_loss": 0.00029713990807067603,
+      "best_val_loss": 0.0001585074933245778
+    },
+    "bottleneck_ContinuousUndamped_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousUndamped",
+      "seed": 101,
+      "sha256": "7663bf3273a250d2bcace71e9063d4b870828c86f11d14bc8d7c0ddb260d7725",
+      "test_loss": 0.0005577938456553966,
+      "best_val_loss": 0.0003054412518395111
+    },
+    "bottleneck_ContinuousUndamped_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "ContinuousUndamped",
+      "seed": 777,
+      "sha256": "a822ad34142d19d11ade7027e2f1ae4ec4870d7abbeb6a26c077db39e5d4d555",
+      "test_loss": 0.0009377686074003577,
+      "best_val_loss": 0.0005143223970662802
+    },
+    "bottleneck_DiscreteGNN_L6_seed_42.pt": {
+      "family": "bottleneck",
+      "config": "DiscreteGNN_L6",
+      "seed": 42,
+      "sha256": "d8aa20c18a9bb158e6c1531aea6f480a973cf1d080f961886b1f164e3d85f731",
+      "test_loss": 5.453682388179004e-05,
+      "best_val_loss": 2.370748597968486e-05
+    },
+    "bottleneck_DiscreteGNN_L6_seed_101.pt": {
+      "family": "bottleneck",
+      "config": "DiscreteGNN_L6",
+      "seed": 101,
+      "sha256": "5052bb261b52b50d3b9f75ba9e84c822626f712b0c268ff65ef02379286a595c",
+      "test_loss": 9.792283817660064e-05,
+      "best_val_loss": 4.7489546886936296e-05
+    },
+    "bottleneck_DiscreteGNN_L6_seed_777.pt": {
+      "family": "bottleneck",
+      "config": "DiscreteGNN_L6",
+      "seed": 777,
+      "sha256": "131789771759b6f549f8761e3e02d2e0b124f4c901df07ea1c5520137c1f4184",
+      "test_loss": 7.625739235663786e-05,
+      "best_val_loss": 4.451939639693592e-05
+    },
+    "random_dag_ContinuousDamped_dmin_0.50_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 42,
+      "sha256": "823b7f6f058c52f703195f909f35e9b7338578d1f1440de9d5fa14092eae509d",
+      "test_loss": 0.00445623718982248,
+      "best_val_loss": 0.00420815940015018
+    },
+    "random_dag_ContinuousDamped_dmin_0.50_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 101,
+      "sha256": "4701af41f34229df943d4e195d1699358382dbb8618ca469c0690a7e585a215f",
+      "test_loss": 0.002452591270837304,
+      "best_val_loss": 0.0021868052426725626
+    },
+    "random_dag_ContinuousDamped_dmin_0.50_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.50",
+      "seed": 777,
+      "sha256": "cf19af098ba04d4a43a5797aadbe87205652341d72320acd11b9788feb134bfc",
+      "test_loss": 0.00857067630360169,
+      "best_val_loss": 0.00778602808713913
+    },
+    "random_dag_ContinuousDamped_dmin_0.80_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 42,
+      "sha256": "127c6667caec337d3aff86e4e0df0e1b041608ba85c52077c296ae709bfefdcc",
+      "test_loss": 0.004469217829309501,
+      "best_val_loss": 0.004154607653617859
+    },
+    "random_dag_ContinuousDamped_dmin_0.80_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 101,
+      "sha256": "b2ea749bcef3fea9966ec488d488f4df6f1c47e5d3dabb8c3ed1f0019fdc704e",
+      "test_loss": 0.002699651932283365,
+      "best_val_loss": 0.002388925990089774
+    },
+    "random_dag_ContinuousDamped_dmin_0.80_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_0.80",
+      "seed": 777,
+      "sha256": "b2e06f7dc3e8c48c91d0376d5f7ba8ee5a5e2db6fcc36e0589ff88f436272df6",
+      "test_loss": 0.011257439606835121,
+      "best_val_loss": 0.010317387990653515
+    },
+    "random_dag_ContinuousDamped_dmin_1.05_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 42,
+      "sha256": "8b0b85c6cf57edd12c16e9cde9885b97f197058ed76f484b01e8f5c2c64011c0",
+      "test_loss": 0.004537632756914895,
+      "best_val_loss": 0.0041525959968566895
+    },
+    "random_dag_ContinuousDamped_dmin_1.05_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 101,
+      "sha256": "1deccdbc1ff1a8c586341bab7920134a290ba7f881c240ab48f80b0b9d6ad332",
+      "test_loss": 0.002927819574584386,
+      "best_val_loss": 0.002562390174716711
+    },
+    "random_dag_ContinuousDamped_dmin_1.05_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.05",
+      "seed": 777,
+      "sha256": "bb0628443c3436deeff227d8007a0561af285598ffbb0f6659e0d557f5c6add3",
+      "test_loss": 0.013257583748404082,
+      "best_val_loss": 0.012162938714027405
+    },
+    "random_dag_ContinuousDamped_dmin_1.20_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 42,
+      "sha256": "66d531121c71302b8e1d7c3edc86e1a88c7c5bb57fd698a356b4bf00042357c6",
+      "test_loss": 0.004631862999847183,
+      "best_val_loss": 0.004199564922600985
+    },
+    "random_dag_ContinuousDamped_dmin_1.20_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 101,
+      "sha256": "69b54725bb4c588a9a1ea5657148b6ec299e99e8ec5ade464b10bf267c390ca9",
+      "test_loss": 0.003078209061641246,
+      "best_val_loss": 0.002674404764547944
+    },
+    "random_dag_ContinuousDamped_dmin_1.20_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.20",
+      "seed": 777,
+      "sha256": "f081cac88cae0b7febb97313fbdda65517f88d1137c912224d15b4777b1bd52d",
+      "test_loss": 0.014327948045154864,
+      "best_val_loss": 0.013138583395630121
+    },
+    "random_dag_ContinuousDamped_dmin_1.50_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 42,
+      "sha256": "10e0516729542f28e34a4f7c3289f91ae94e9fc041a23f79e86f81dfa7270b5d",
+      "test_loss": 0.004862319526879431,
+      "best_val_loss": 0.00433169468306005
+    },
+    "random_dag_ContinuousDamped_dmin_1.50_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 101,
+      "sha256": "6a7dc8e4c7b649f17ac4ea0ddc3a149b7844160da26fe3989607de66fd269966",
+      "test_loss": 0.0034007446805632054,
+      "best_val_loss": 0.0029122859705239534
+    },
+    "random_dag_ContinuousDamped_dmin_1.50_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_1.50",
+      "seed": 777,
+      "sha256": "cec5a37c114485358940ff73763247bf99675ccd6987a62f08f48d9318d9eebf",
+      "test_loss": 0.01615024365895948,
+      "best_val_loss": 0.014756519347429276
+    },
+    "random_dag_ContinuousDamped_dmin_2.00_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 42,
+      "sha256": "3fe0914955aceb0754c2c15ac611e27051051791478bfc65d0e4aa440611bc67",
+      "test_loss": 0.0053396352321852915,
+      "best_val_loss": 0.004623279441148043
+    },
+    "random_dag_ContinuousDamped_dmin_2.00_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 101,
+      "sha256": "fbfcab5d4f0c54dca92e62f6b1517b51b4be9ecbf983f87653fe52f01490059c",
+      "test_loss": 0.0039733442789330695,
+      "best_val_loss": 0.0033176876604557037
+    },
+    "random_dag_ContinuousDamped_dmin_2.00_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousDamped_dmin_2.00",
+      "seed": 777,
+      "sha256": "90307b0873ddf20ad41d175e446ee371fb5fb4e813300fb95ebc30f7886e6b3a",
+      "test_loss": 0.018433705528641677,
+      "best_val_loss": 0.01670652162283659
+    },
+    "random_dag_ContinuousUndamped_seed_42.pt": {
+      "family": "random_dag",
+      "config": "ContinuousUndamped",
+      "seed": 42,
+      "sha256": "b477ea218f2ef340aac1f3cd4c25e74c80c9e4ae8981ac772cfa8c55bdc9751d",
+      "test_loss": 0.001530921600710649,
+      "best_val_loss": 0.0009064029436558485
+    },
+    "random_dag_ContinuousUndamped_seed_101.pt": {
+      "family": "random_dag",
+      "config": "ContinuousUndamped",
+      "seed": 101,
+      "sha256": "9022d1fd9869e03a4f080fcf1226e44311593f8217b262a60693a5c203f3bcd6",
+      "test_loss": 0.0014005317953687355,
+      "best_val_loss": 0.0009429001365788281
+    },
+    "random_dag_ContinuousUndamped_seed_777.pt": {
+      "family": "random_dag",
+      "config": "ContinuousUndamped",
+      "seed": 777,
+      "sha256": "4b0e37ae7a12762e0aade0d09625fcae6bb40282ebc59be22045d94c90151823",
+      "test_loss": 0.0031103963597810696,
+      "best_val_loss": 0.0020136237144470215
+    },
+    "random_dag_DiscreteGNN_L6_seed_42.pt": {
+      "family": "random_dag",
+      "config": "DiscreteGNN_L6",
+      "seed": 42,
+      "sha256": "b83ac40f755c9869208a3bee97ea1668d7bd4ee5d50351417f922e1241fe0bcc",
+      "test_loss": 0.0003455029524614817,
+      "best_val_loss": 0.00021709524298785254
+    },
+    "random_dag_DiscreteGNN_L6_seed_101.pt": {
+      "family": "random_dag",
+      "config": "DiscreteGNN_L6",
+      "seed": 101,
+      "sha256": "10efd31fcd0e76a92f3f0425bf585503ea07e642f0b349c97e5721bc1f793ace",
+      "test_loss": 0.0005445796862175059,
+      "best_val_loss": 0.00035144064895575866
+    },
+    "random_dag_DiscreteGNN_L6_seed_777.pt": {
+      "family": "random_dag",
+      "config": "DiscreteGNN_L6",
+      "seed": 777,
+      "sha256": "e936521f1652e5d49a7daf7f2affd6f0ae08c677db2487e27b781ba6010b08d7",
+      "test_loss": 0.0004828089258335712,
+      "best_val_loss": 0.0002891373442253098
+    }
+  },
+  "summary_table": {
+    "chain_ladder": {
+      "ContinuousDamped_dmin_0.50": {
+        "mean_test_loss": 0.0007606488342086474,
+        "std_test_loss": 0.0003072472954429504,
+        "mean_val_loss": 0.0006751941934150333,
+        "std_val_loss": 0.0003285164313026679,
+        "per_seed_test_loss": [
+          0.0010355836246162653,
+          0.00042899326654151083,
+          0.0008173696114681661
+        ]
+      },
+      "ContinuousDamped_dmin_0.80": {
+        "mean_test_loss": 0.0008247982555379471,
+        "std_test_loss": 0.0002599194388536708,
+        "mean_val_loss": 0.0007624635036336258,
+        "std_val_loss": 0.00026965150626834673,
+        "per_seed_test_loss": [
+          0.0010136976838111878,
+          0.0005283686681650579,
+          0.0009323284146375954
+        ]
+      },
+      "ContinuousDamped_dmin_1.05": {
+        "mean_test_loss": 0.0009293179299371938,
+        "std_test_loss": 0.0003003376410302774,
+        "mean_val_loss": 0.0008575415704399347,
+        "std_val_loss": 0.0002895650790159407,
+        "per_seed_test_loss": [
+          0.0011775856837630272,
+          0.0005954817868769168,
+          0.0010148863191716373
+        ]
+      },
+      "ContinuousDamped_dmin_1.20": {
+        "mean_test_loss": 0.0009698384286214908,
+        "std_test_loss": 0.00030630587538086327,
+        "mean_val_loss": 0.0008878094474008927,
+        "std_val_loss": 0.00028306506215994845,
+        "per_seed_test_loss": [
+          0.0012186575215309859,
+          0.0006277362466789782,
+          0.0010631215176545084
+        ]
+      },
+      "ContinuousDamped_dmin_1.50": {
+        "mean_test_loss": 0.0010512537866209945,
+        "std_test_loss": 0.0003236352203555839,
+        "mean_val_loss": 0.0009432843265434107,
+        "std_val_loss": 0.0002780109883308962,
+        "per_seed_test_loss": [
+          0.0013059742283076047,
+          0.0006870858836919069,
+          0.0011607012478634716
+        ]
+      },
+      "ContinuousDamped_dmin_2.00": {
+        "mean_test_loss": 0.0012233818881213665,
+        "std_test_loss": 0.0003761173840088463,
+        "mean_val_loss": 0.0010571567108854651,
+        "std_val_loss": 0.00028985626204896403,
+        "per_seed_test_loss": [
+          0.0015324223786592484,
+          0.000804598955437541,
+          0.0013331243302673102
+        ]
+      },
+      "ContinuousUndamped": {
+        "mean_test_loss": 0.00021266196514867867,
+        "std_test_loss": 0.00011579490723064458,
+        "mean_val_loss": 5.6161851413586796e-05,
+        "std_val_loss": 2.544734633220844e-05,
+        "per_seed_test_loss": [
+          0.00013577744321082718,
+          0.00015636754760635086,
+          0.00034584090462885797
+        ]
+      },
+      "DiscreteGNN_L6": {
+        "mean_test_loss": 0.00023397858761503207,
+        "std_test_loss": 7.221042929896247e-05,
+        "mean_val_loss": 3.2066887797554955e-05,
+        "std_val_loss": 1.0167243766245687e-05,
+        "per_seed_test_loss": [
+          0.00017248799013032113,
+          0.00021595375292235986,
+          0.0003134940197924152
+        ]
+      }
+    },
+    "bottleneck": {
+      "ContinuousDamped_dmin_0.50": {
+        "mean_test_loss": 0.0009317382898492117,
+        "std_test_loss": 0.0002611445115767551,
+        "mean_val_loss": 0.000779706722823903,
+        "std_val_loss": 0.00023454313949477219,
+        "per_seed_test_loss": [
+          0.000913439760915935,
+          0.0006802243064157665,
+          0.0012015508022159339
+        ]
+      },
+      "ContinuousDamped_dmin_0.80": {
+        "mean_test_loss": 0.001074163313023746,
+        "std_test_loss": 0.0002983814419858255,
+        "mean_val_loss": 0.0008739599143154919,
+        "std_val_loss": 0.00023897748706482104,
+        "per_seed_test_loss": [
+          0.0010839223396033049,
+          0.0007710220757871866,
+          0.0013675455236807465
+        ]
+      },
+      "ContinuousDamped_dmin_1.05": {
+        "mean_test_loss": 0.0011686184133092564,
+        "std_test_loss": 0.00032109511862827704,
+        "mean_val_loss": 0.0009361881820950657,
+        "std_val_loss": 0.00024017435044799659,
+        "per_seed_test_loss": [
+          0.0011471168603748084,
+          0.0008588144555687904,
+          0.00149992392398417
+        ]
+      },
+      "ContinuousDamped_dmin_1.20": {
+        "mean_test_loss": 0.0012952026096172632,
+        "std_test_loss": 0.000339063527690638,
+        "mean_val_loss": 0.001009127978856365,
+        "std_val_loss": 0.00025248768055432424,
+        "per_seed_test_loss": [
+          0.0013865047367289662,
+          0.0009198364918120205,
+          0.0015792666003108025
+        ]
+      },
+      "ContinuousDamped_dmin_1.50": {
+        "mean_test_loss": 0.0013657213654369113,
+        "std_test_loss": 0.00033783213874108984,
+        "mean_val_loss": 0.001060058663521583,
+        "std_val_loss": 0.00023263309962786539,
+        "per_seed_test_loss": [
+          0.0013108891202136875,
+          0.0010586593532934784,
+          0.0017276156228035688
+        ]
+      },
+      "ContinuousDamped_dmin_2.00": {
+        "mean_test_loss": 0.001641704747453332,
+        "std_test_loss": 0.00033517183201079527,
+        "mean_val_loss": 0.0012355805762733023,
+        "std_val_loss": 0.00021749647581135217,
+        "per_seed_test_loss": [
+          0.001583711546845734,
+          0.001339313737116754,
+          0.0020020889583975076
+        ]
+      },
+      "ContinuousUndamped": {
+        "mean_test_loss": 0.0005975674537088101,
+        "std_test_loss": 0.00032216104284099877,
+        "mean_val_loss": 0.00032609038074345637,
+        "std_val_loss": 0.0001788039466134572,
+        "per_seed_test_loss": [
+          0.00029713990807067603,
+          0.0005577938456553966,
+          0.0009377686074003577
+        ]
+      },
+      "DiscreteGNN_L6": {
+        "mean_test_loss": 7.623901813834284e-05,
+        "std_test_loss": 2.1693012983592226e-05,
+        "mean_val_loss": 3.857214308785236e-05,
+        "std_val_loss": 1.295854820922692e-05,
+        "per_seed_test_loss": [
+          5.453682388179004e-05,
+          9.792283817660064e-05,
+          7.625739235663786e-05
+        ]
+      }
+    },
+    "random_dag": {
+      "ContinuousDamped_dmin_0.50": {
+        "mean_test_loss": 0.005159834921420491,
+        "std_test_loss": 0.003119139054765962,
+        "mean_val_loss": 0.004726997576653957,
+        "std_val_loss": 0.0028354398081333683,
+        "per_seed_test_loss": [
+          0.00445623718982248,
+          0.002452591270837304,
+          0.00857067630360169
+        ]
+      },
+      "ContinuousDamped_dmin_0.80": {
+        "mean_test_loss": 0.006142103122809329,
+        "std_test_loss": 0.004517503887611332,
+        "mean_val_loss": 0.005620307211453716,
+        "std_val_loss": 0.0041624912995676,
+        "per_seed_test_loss": [
+          0.004469217829309501,
+          0.002699651932283365,
+          0.011257439606835121
+        ]
+      },
+      "ContinuousDamped_dmin_1.05": {
+        "mean_test_loss": 0.006907678693301121,
+        "std_test_loss": 0.005557773410019329,
+        "mean_val_loss": 0.006292641628533602,
+        "std_val_loss": 0.005145627225437124,
+        "per_seed_test_loss": [
+          0.004537632756914895,
+          0.002927819574584386,
+          0.013257583748404082
+        ]
+      },
+      "ContinuousDamped_dmin_1.20": {
+        "mean_test_loss": 0.007346006702214431,
+        "std_test_loss": 0.006096235627591945,
+        "mean_val_loss": 0.006670851027593017,
+        "std_val_loss": 0.005652893052707103,
+        "per_seed_test_loss": [
+          0.004631862999847183,
+          0.003078209061641246,
+          0.014327948045154864
+        ]
+      },
+      "ContinuousDamped_dmin_1.50": {
+        "mean_test_loss": 0.008137769288800705,
+        "std_test_loss": 0.006977381988051428,
+        "mean_val_loss": 0.00733350000033776,
+        "std_val_loss": 0.006467580107256273,
+        "per_seed_test_loss": [
+          0.004862319526879431,
+          0.0034007446805632054,
+          0.01615024365895948
+        ]
+      },
+      "ContinuousDamped_dmin_2.00": {
+        "mean_test_loss": 0.009248895013253346,
+        "std_test_loss": 0.007983560978343296,
+        "mean_val_loss": 0.008215829574813446,
+        "std_val_loss": 0.007382074983717345,
+        "per_seed_test_loss": [
+          0.0053396352321852915,
+          0.0039733442789330695,
+          0.018433705528641677
+        ]
+      },
+      "ContinuousUndamped": {
+        "mean_test_loss": 0.0020139499186201514,
+        "std_test_loss": 0.0009517859392138065,
+        "mean_val_loss": 0.0012876422648938994,
+        "std_val_loss": 0.0006289831556522429,
+        "per_seed_test_loss": [
+          0.001530921600710649,
+          0.0014005317953687355,
+          0.0031103963597810696
+        ]
+      },
+      "DiscreteGNN_L6": {
+        "mean_test_loss": 0.0004576305215041863,
+        "std_test_loss": 0.00010189872675442138,
+        "mean_val_loss": 0.00028589107872297365,
+        "std_val_loss": 6.723150828260601e-05,
+        "per_seed_test_loss": [
+          0.0003455029524614817,
+          0.0005445796862175059,
+          0.0004828089258335712
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+================================================================================
+INDEPENDENT BASELINE INTEGRITY AUDIT
+Manifest: BASELINE_MANIFEST.json | Total Files to Verify: 25
+Timestamp: 2026-11-16T06:25:20.068831+00:00
+================================================================================
+
+Relative Path                                      | Expected SHA-256 | Actual SHA-256   | Status
+--------------------------------------------------------------------------------------------
+CLAIM_EVIDENCE_MATRIX.md                           | 4ab1d1bd286aa3f3 | 4ab1d1bd286aa3f3 | MATCH
+audit/FROZEN_ARTIFACT_VERIFICATION_RECORD.md       | 6b9f75807ef6f956 | 6b9f75807ef6f956 | MATCH
+audit/PHASE_2_DISPOSITION_NOTE.md                  | d99d2aa0ead94e7c | d99d2aa0ead94e7c | MATCH
+data/manifests/cora_splits_manifest.json           | 706a471de1c4ce78 | 706a471de1c4ce78 | MATCH
+external_validation/EXTERNAL_VALIDATION_REPORT.md  | b5e828f242333522 | b5e828f242333522 | MATCH
+external_validation/PROTOCOL_V2_ADDENDUM.md        | d97120fa4c5a403c | d97120fa4c5a403c | MATCH
+external_validation/data/manifests/confirmatory_v2_manifest.json | 57f05d7f2e128802 | 57f05d7f2e128802 | MATCH
+external_validation/results/confirmatory_v2/gate_d_confirmatory_audit.json | f062ad7e6edd4ef2 | f062ad7e6edd4ef2 | MATCH
+external_validation/results/frozen_provenance_manifest.json | 7974e1c2f2173094 | 7974e1c2f2173094 | MATCH
+external_validation/scripts/run_gate_c_confirmatory.py | bb0195cee547451b | bb0195cee547451b | MATCH
+external_validation/scripts/run_gate_d_confirmatory_audit.py | 1c6b04b9618e61f9 | 1c6b04b9618e61f9 | MATCH
+manuscript/manuscript.md                           | a246cf091ade0312 | a246cf091ade0312 | MATCH
+manuscript/template.md                             | 6b56c19c89d991db | 6b56c19c89d991db | MATCH
+results/processed/reworked_summary.json            | 156bef65f7b531b8 | 156bef65f7b531b8 | MATCH
+results/processed/verification.json                | 9e8280961daa9b3f | 9e8280961daa9b3f | MATCH
+scripts/build_research_release.py                  | ec0d10dd16fbe777 | ec0d10dd16fbe777 | MATCH
+scripts/verify_reworked_models.py                  | 33553fa53a4fa9d4 | 33553fa53a4fa9d4 | MATCH
+src/dynamics/solvers.py                            | cc6ff0f05d4d8615 | cc6ff0f05d4d8615 | MATCH
+src/models/certified_cora.py                       | 1be1826cc913799d | 1be1826cc913799d | MATCH
+src/models/cora_reasoner.py                        | 3a3bf447a7c9468d | 3a3bf447a7c9468d | MATCH
+submission_package/reworked/05_Supplementary_Material.md | 516be5270b778740 | 516be5270b778740 | MATCH
+submission_package/reworked/VENUE_FIT_AND_REQUIREMENTS.md | 543d6eaefea04aa4 | 543d6eaefea04aa4 | MATCH
+submission_package/reworked/manuscript.html        | 9c4dc27b917d821c | 9c4dc27b917d821c | MATCH
+submission_package/reworked/manuscript.md          | a246cf091ade0312 | a246cf091ade0312 | MATCH
+submission_package/reworked/release_manifest.json  | 5eabd928561d4371 | 5eabd928561d4371 | MATCH
+--------------------------------------------------------------------------------------------
+VERIFICATION SUMMARY: 25/25 files matched.
+OVERALL INTEGRITY: PASSED (100% UNCHANGED)
+================================================================================
+
+Certificate written to: /Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/stability_investigation/audit/baseline_verification_certificate.json
