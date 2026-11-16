@@ -54,3 +54,10 @@ Icon
 *~
 ~$*
 
+# Submission packages (retained locally for journal portal upload; excluded from reviewer repository)
+submission_package/
+submission_candidate/
+stability_investigation/submission_candidate/
+stability_investigation/manuscript/
+
+
