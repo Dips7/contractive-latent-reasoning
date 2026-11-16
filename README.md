@@ -1,7 +1,6 @@
 # Reviewer Replication Suite: Continuous Graph Latent Dynamics
 
 **Manuscript**: *Stability and Long-Range Information Propagation in Continuous-Time Graph Neural Dynamics: Sensitivity Analysis, Audited Benchmarks, and Certified Multiscale Architectures*  
-**Target Journal**: *Neurocomputing* (Elsevier)  
 **Package Type**: Standalone Reviewer Replication Suite & Research Repository
 
 ---
