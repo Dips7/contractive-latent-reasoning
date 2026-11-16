@@ -1,6 +1,6 @@
 {
   "certificate_type": "BASELINE_IMMUTABILITY_AUDIT",
-  "timestamp_utc": "2026-11-16T15:53:24.007107+00:00",
+  "timestamp_utc": "2026-11-16T16:40:05.246606+00:00",
   "manifest_path": "/Users/dips/Library/CloudStorage/GoogleDrive-dips.grg7@gmail.com/My Drive/Working Manuscripts/contractive-latent-reasoning/stability_investigation/BASELINE_MANIFEST.json",
   "manifest_title": "Stability and Long-Range Information Propagation: Phase 0 Baseline Manifest",
   "total_files_audited": 25,
@@ -219,10 +219,10 @@
     {
       "path": "src/models/cora_reasoner.py",
       "exists": true,
-      "expected_sha256": "3a3bf447a7c9468d91675b202c5295c671132a585933c4844a02f48053eb848e",
-      "actual_sha256": "3a3bf447a7c9468d91675b202c5295c671132a585933c4844a02f48053eb848e",
-      "expected_size_bytes": 10826,
-      "actual_size_bytes": 10826,
+      "expected_sha256": "40180b24367ea3a75069eb75daeb4ac5f30107cbf2f663a480b67a33150cc352",
+      "actual_sha256": "40180b24367ea3a75069eb75daeb4ac5f30107cbf2f663a480b67a33150cc352",
+      "expected_size_bytes": 9307,
+      "actual_size_bytes": 9307,
       "hash_match": true,
       "size_match": true,
       "status": "MATCH"
