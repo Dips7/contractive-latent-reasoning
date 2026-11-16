@@ -1,0 +1,15 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Gurung
+    given-names: Dipesh
+    orcid: https://orcid.org/0009-0009-0335-2267
+  - family-names: Bhattarai
+    given-names: Binod
+    orcid: https://orcid.org/0009-0006-6691-5264
+  - family-names: Thakur
+    given-names: R. N.
+    orcid: https://orcid.org/0000-0003-3911-4358
+title: "Dips7/contractive-latent-reasoning: v1.0.0: Reviewer Replication Suite – Continuous Graph Latent Dynamics"
+version: v1.0.0
+date-released: 2026-11-16
