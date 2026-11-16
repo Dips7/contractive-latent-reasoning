@@ -1,123 +1,154 @@
-# Contractive Latent Dynamical Reasoning (CLR)
+# Reviewer Replication Suite: Continuous Graph Latent Dynamics
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-A continuous-time reasoning architecture that replaces discrete autoregressive chain-of-thought (CoT) with an algebraically constrained, contractive dynamical system.
+**Manuscript**: *Stability and Long-Range Information Propagation in Continuous-Time Graph Neural Dynamics: Sensitivity Analysis, Audited Benchmarks, and Certified Multiscale Architectures*  
+**Target Journal**: *Neurocomputing* (Elsevier)  
+**Package Type**: Standalone Reviewer Replication Suite & Research Repository
 
 ---
 
-## Key Mathematical Idea
+## 1. Overview & Research Scope
 
-Instead of emitting thousands of unverified tokens where error accumulates multiplicatively ($e^{-\sum \epsilon_t}$), we formulate reasoning as an energy-minimizing flow in a continuous latent space $\mathbf{z} \in \mathbb{R}^d$:
+This repository provides the complete, self-contained replication suite accompanying the manuscript. It contains the dataset generation logic, model definitions, training harnesses, and evaluation tools required to reproduce the synthetic benchmark suite, architectures, and loss certificates described in the paper.
 
-$$\frac{d\mathbf{z}}{dt} = -\nabla_\mathbf{z} E_\theta(\mathbf{z}; \mathbf{x}) - \mathbf{D}\mathbf{z}, \quad \mathbf{D} \succ 0$$
+### Research Contributions & Empirical Scope:
+1. **Analytical Sensitivity Analysis**: Proves that under continuous-time Demidovich contraction ($\mu_2(J) \le -\alpha < 0$), the spatial block of the equilibrium input-sensitivity Jacobian decays exponentially as $\mathcal{O}\left(\frac{1}{\alpha}\left(\frac{\beta}{\beta+\alpha}\right)^k\right)$ along shortest paths of length $k$, induced by shortest-path nilpotency under elementwise activations.
+2. **Audited Synthetic Benchmark Suite**: Formulates and audits 36 graph instances (7,230 reachability queries) across directed chains, bottlenecks, and acyclic digraphs with graph-instance-level test partitioning, zero replacement sampling, zero internal duplicates, and BFS-verified ground truth.
+3. **Factorial Damping Sweep**: Evaluates 72 trained models across nominal damping parameters, demonstrating that continuous contractive models achieve 100.0% multi-hop recall on small bounded-degree graphs while test cross-entropy losses scale monotonically across nominal damping settings under the evaluated protocol.
+4. **Multiscale Skip-Hop Contractive Architecture**: Introduces a multiscale architecture ($P_1 = P, P_2 = P^2$) satisfying uniform Demidovich contraction while accelerating the spatial influence bound to $\mathcal{O}(\rho^{\lceil k/2 \rceil})$, achieving 47.7% to 69.3% reductions in held-out test cross-entropy loss relative to single-scale baselines.
 
-By bounding the symmetric Jacobian of the vector field:
-$$\lambda_{\max}\left(\frac{\mathbf{J} + \mathbf{J}^T}{2}\right) \le -\kappa < 0$$
-all trajectories converge exponentially to a single, unique fixed point $\mathbf{z}^*(\mathbf{x})$, guaranteeing robustness against hallucinations and enabling continuous test-time compute scaling by integrating longer in time ($T$).
+> [!IMPORTANT]
+> **Replication Scope & Package Notice**:  
+> The workflow and scripts in this repository are provided for independent reviewer replication. During package quality assurance (QA), **individual components were verified** in an isolated clean-extraction environment:
+> 1. Complete regeneration of the 36-instance benchmark suite across 3 digraph families (`dataset_generator.py`).
+> 2. Cryptographic SHA-256 verification of all 36 graph instances and the dataset manifest against research release digests (`verify_dataset_integrity.py`).
+> 3. Independent audit of all 7,230 reachability queries and operator norm bounds ($\|P\|_2 \le 1.0$) against BFS ground truth (`audit_benchmark_data.py`).
+> 4. Forward and backward gradient pass execution across all 5 model architectures (`models.py`).
+>
+> **Full retraining of all 117 models (72 damping sweep + 45 architectural comparison models) was not rerun during packaging QA.** The 117 model evaluations reported in the manuscript and supplement represent completed empirical runs from the original research study, audited under recorded loss certificates. Binary checkpoint files (`*.pt`) are omitted from the standalone archive to adhere to clean code release standards; executing Steps 5 and 6 retrains all models from scratch to regenerate checkpoints locally under `./results/*/checkpoints/`, which Step 7 then evaluates to generate held-out test loss certificates.
 
 ---
 
-## Directory Layout
+## 2. System Requirements & Environment
+
+### Pinned Dependencies (`requirements.txt`):
+- **Python**: `3.9.6` (CPython 3.9+)
+- **PyTorch**: `torch==2.8.0`
+- **NumPy**: `numpy==2.0.2`
+- **NetworkX**: `networkx==3.2.1`
+
+### Hardware Requirements & Expected Runtimes:
+- **Compute**: Standard CPU or CUDA/MPS GPU (all default settings execute on standard multi-core CPU).
+- **RAM**: $\ge 8$ GB.
+- **Estimated Full Runtime**:
+  - Steps 1–4 (Dataset generation, integrity check & audit): $< 30$ seconds.
+  - Step 5 (72-model damping parameter sweep): $\approx 10$ minutes on an 8-core CPU.
+  - Step 6 (45-model architectural comparison): $\approx 8$ minutes on an 8-core CPU.
+  - Step 7 (Held-out test loss evaluation & certificate generation): $< 30$ seconds.
+
+---
+
+## 3. Directory Structure
 
 ```text
 contractive-latent-reasoning/
-├── IMPLEMENTATION_PLAN.md    # Detailed research & engineering master plan
-├── README.md                 # Project overview and quickstart
-├── pyproject.toml            # Python packaging metadata
-├── requirements.txt          # Pinned dependencies
-├── configs/                  # Hydra/YAML experiment configurations
-├── data/                     # Synthetic benchmark generators
-│   └── generators/           # Parity, Graph Connectivity, S_n Groups
-├── src/                      # Core package source code
-│   ├── dynamics/             # Energy potentials, vector fields, contraction hooks, solvers
-│   ├── models/               # Encoders, ODE reasoners, decoders, hybrid models
-│   ├── training/             # Loss functions, trainers, integration schedulers
-│   ├── diagnostics/          # Jacobian eigenspectrum, multi-seed convergence tracker
-│   └── utils/                # Metrics and helpers
-├── experiments/              # Executable experiment entry points
-├── tests/                    # Unit and regression test suite
-├── notebooks/                # Phase space and trajectory visualization
-└── docs/                     # Architectural and mathematical specifications
+├── README.md                                  # This replication guide
+├── requirements.txt                           # Pinned dependencies (torch, networkx, numpy)
+└── stability_investigation/                   # Core research investigation
+    ├── reviewer_code_bundle/                  # Standalone self-contained reviewer replication suite
+    │   ├── README.md                          # Standalone execution guide
+    │   ├── requirements.txt                   # Environment specification
+    │   ├── benchmark_manifest.json            # Dataset metadata & SHA-256 instance digests
+    │   ├── dataset_generator.py               # Step 1: Benchmark suite generation
+    │   ├── verify_dataset_integrity.py        # Step 2: Cryptographic dataset verification
+    │   ├── audit_benchmark_data.py            # Step 3: Graph reachability & operator norm audit
+    │   ├── models.py                          # Step 4: Model architecture definitions
+    │   ├── run_damping_intervention.py        # Step 5: 72-model damping parameter sweep
+    │   ├── run_architectural_comparison.py    # Step 6: 45-model architectural comparison
+    │   └── evaluate_and_persist_test_loss.py  # Step 7: Test loss evaluation & certificates
+    ├── data/                                  # Pre-generated benchmark datasets
+    │   ├── benchmark_audit_certificate.json   # Full BFS ground truth audit certificate
+    │   └── synthetic/                         # 36 benchmark digraph instances (.pt)
+    ├── results/                               # Empirical results, checkpoints & certificates
+    │   ├── damping_intervention/              # Damping sweep checkpoints & loss certificates
+    │   └── architectural_comparison/          # Architectural comparison checkpoints & certificates
+    ├── scripts/                               # Core execution and verification scripts
+    ├── src/                                   # Extended model architectures and generators
+    ├── audit/                                 # Provenance & baseline integrity certificates
+    ├── ARCHITECTURAL_COMPARISON_REPORT.md     # 45-model comparative evaluation report
+    ├── BENCHMARK_AUDIT_REPORT.md              # 36-instance dataset audit report
+    ├── CLAIM_REGISTER.md                      # Formal empirical and theoretical claim registry
+    ├── DAMPING_INTERVENTION_REPORT.md         # 72-model damping parameter sweep report
+    ├── PROOF_OBLIGATIONS.md                   # Mathematical proof obligations & status
+    ├── SENSITIVITY_ANALYSIS.md                # Resolvent series derivation & sensitivity bounds
+    ├── STUDY_PROTOCOL.md                      # Pre-registered study protocol & methodology
+    └── THEORY_NOTE.md                         # Contraction theory & spectral bounds
 ```
 
 ---
 
-## Quickstart
+## 4. Step-by-Step Reviewer Reproduction Workflow
 
-### 1. Installation
-
+### Step 0: Clone & Install Dependencies
 ```bash
+git clone -b stability-investigation https://github.com/Dips7/contractive-latent-reasoning.git
 cd contractive-latent-reasoning
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
-pip install -e .
+cd stability_investigation/reviewer_code_bundle
 ```
 
-### 2. Run Test Suite
-
+### Step 1: Regenerate the 36-Instance Benchmark Suite
+Generates 36 graph instances across directed chains, bottlenecks, and acyclic digraphs:
 ```bash
-pytest tests/
+python3 dataset_generator.py
+```
+*Expected Output*: Generated 36/36 graph files in `./data/synthetic/` and wrote `benchmark_manifest.json`.
+
+### Step 2: Cryptographic SHA-256 Dataset Verification
+Verifies instance byte-sizes and cryptographic SHA-256 digests:
+```bash
+python3 verify_dataset_integrity.py
+```
+*Expected Output*: `36/36 instance hashes matched. Verification PASSED.`
+
+### Step 3: Independent Graph Reachability & Operator Norm Audit
+Audits all 7,230 query reachability labels against NetworkX BFS and verifies $\|P\|_2 \le 1.0$:
+```bash
+python3 audit_benchmark_data.py
+```
+*Expected Output*: `BFS ground-truth verification: 7230/7230 queries matched (0 errors). Maximum spectral norm: 1.000000 <= 1.0. Audit PASSED.`
+
+### Step 4: Model Forward & Backward Pass Verification
+Verifies model instantiation and gradient backpropagation for all 5 architectures:
+```bash
+python3 -c "import torch; import models; m = models.MultiscaleSkipHop(1, 8, 2, 0.05, 1.5, 0.5, 0.5); x = torch.randn(10, 1); A = torch.eye(10); out = m(x, A); out.sum().backward(); print('Model check passed successfully.')"
 ```
 
-### 3. Run Experiments & Audits
+### Step 5: Execute 72-Model Damping Parameter Sweep
+Retrains 72 models across nominal damping settings ($d_{\min} \in \{0.50, 0.80, 1.05, 1.20, 1.50, 2.00\}$), undamped baselines, and discrete GNNs:
+```bash
+python3 run_damping_intervention.py
+```
 
-- **Phase 1 Proof-of-Concept (N-bit Parity)**:
-  ```bash
-  python experiments/run_phase1_proof_of_concept.py --config configs/phase1_parity.yaml
-  ```
-- **Phase 2 Contraction Diagnostics & Eigenspectrum**:
-  ```bash
-  python experiments/run_phase2_contraction_ablation.py --config configs/phase2_contraction.yaml
-  ```
-- **Multi-Hop Graph Reachability & Continuous Test-Time Scaling**:
-  ```bash
-  python experiments/run_graph_reachability_experiment.py
-  ```
-- **Perturbation & Self-Healing Stress Test**:
-  ```bash
-  python experiments/run_perturbation_stress_test.py
-  ```
-- **Real-World Cora Academic Network Benchmark (2,708 papers, 5,429 citations)**:
-  ```bash
-  python experiments/run_cora_real_world_experiment.py
-  ```
-- **Phase 3 Hybrid Interface (Continuous Thought to Token Decoder)**:
-  ```bash
-  python experiments/run_phase3_hybrid_reasoning.py
-  ```
-- **Parity Generalization & Overlap Audit**:
-  ```bash
-  python experiments/run_parity_generalization_audit.py
-  ```
+### Step 6: Execute 45-Model Architectural Comparison Study
+Trains the 45-model architectural benchmark suite across all 3 topology families and 5 model configurations:
+```bash
+python3 run_architectural_comparison.py
+```
+
+### Step 7: Evaluate Held-Out Test Loss & Generate Certificates
+Evaluates test cross-entropy loss across all trained models:
+```bash
+python3 evaluate_and_persist_test_loss.py
+```
+*Expected Output*: `test_loss_evaluation_certificate.json written. All test evaluations completed.`
 
 ---
 
-## Verified Empirical Results (Post-Audit Benchmarks)
+## 5. Architectural Specifications
 
-All results below are reproducible and persisted as verifiable JSON artifacts in `experiments/results/`:
-
-| Benchmark | Baseline | CLR (Contractive ODE) | Key Mechanism & Finding |
+| Model Class | Vector Field Formulation | Damping Bound | Spatial Decay Rate |
 | :--- | :--- | :--- | :--- |
-| **Real-World Cora Citation Network** (2,708 papers, 5,429 citations) | 68.67% (Direct MLP) / 60.67% (GNN-2) / 74.67% (GNN-4) / 87.67% (GNN-6) / 86.67% (GNN-8) | **100.00%** (T=4.0, isolated seed 42) | Continuous flow outperforms discrete message passing even when horizon ceiling is 100% (GNN-6: 87.7%, GNN-8: 86.7% due to layer-wise optimization degradation and over-smoothing). 0.0% deep-hop accuracy on GNN-2/4 explained by majority-class default (89.3% and 75.3% predicted unreachable). Monotonic $T$-scaling: 90.3% ($T=0.5$) $\to$ 96.7% ($T=1.0$) $\to$ 98.7% ($T=2.0$) $\to$ 100.0% ($T\ge 4.0$). All 6 checkpoints saved in `checkpoints/`. |
-| **Multi-Hop Reachability** (16 nodes) | 54.50% (Constant depth) | **94.67%** | Monotonic compute scaling: $T=0.5$ (74.67%) $\to T=20.0$ (**96.33%**). True spectral bound $\lambda_{\max} \le \|A_{\text{norm}}\|_2 - d_{\min} = -0.387 < 0$. |
-| **Midpoint Noise Perturbation** ($\Delta t = 5.0$) | Drops 100% $\to$ 72.33% (at 500% noise) | **92.67% – 95.83%** (Synthetic) / **92.67%** ($\sigma=10^{-7}$) $\to$ **50.00%** ($\sigma \ge 10^{-6}$) (Cora) | Exponential contraction decays perturbations by **286× – 307×** in synthetic regimes. On Cora (2,708 nodes), self-healing is refuted: a graded transition occurs at $\sigma \in [10^{-7}, 10^{-6}]$ as additive background noise fills the unreachable log-norm floor ($-16.40 > -17.5$), driving predictions to chance (50.0%). |
-| **Hybrid Thought-to-Token** (Two-Stage Decoder) | — | **99.00%** Token Acc (100% Exact Sentences) | Autoregressively generates sentences from $\mathbf{z}^*$; monotonic test-time scaling: $T=0.5$ (75.0%) $\to T=10.0$ (**95.5%**). |
-| **Demidovich Contraction Bound** | $\lambda_{\max} > 0$ (unconstrained) | $\lambda_{\max}(\text{Sym}(\mathbf{J})) \le \mathbf{-0.535}$ (Synthetic) / $\mathbf{-1.890}$ (Cora, empirical) | Strictly contractive: Cora analytic bound $\le -0.981 < 0$ and empirical 43,328-dim power iteration yields $\lambda_{\max}(\text{Sym}(J)) = -1.890 < 0$. |
-| **Parity Generalization Audit** | 46.50% ($N=8$) / 48.00% ($N=32$) | 100% ($N=8$, recall) / 49.50% ($N=32$, chance) | Discloses $N=8$ memorization vs $N=32$ held-out boundary; documents ICNN potential expressivity limit on non-convex parity (`docs/mathematical_reference.md` §7). |
-
----
-
-## Citation
-
-```bibtex
-@article{clr2026,
-  title={Contractive Latent Dynamical Reasoning: Bypassing Autoregressive Rollouts via Energy Contraction},
-  author={Research Team},
-  journal={Working Manuscript},
-  year={2026}
-}
-```
+| **Continuous Undamped** | $f(z) = \sigma(P z W) - z$ | $\mu_2(J) \le 0$ | Marginal ($\rho = 1.0$) |
+| **Continuous Damped** | $f(z) = \sigma(P z W) - D z$ ($d_{\min} \ge 1.05$) | $\mu_2(J) \le -0.05$ | $\mathcal{O}(\rho^k)$, $\rho \approx 0.952$ |
+| **Multiscale Skip-Hop** | $f(z) = \sigma(w_1 P z W_1 + w_2 P^2 z W_2) - D z$ | $\mu_2(J) \le -0.05$ | $\mathcal{O}(\rho^{\lceil k/2 \rceil})$, $\rho \approx 0.952$ |
+| **Discrete GNN-6** | $h^{(l+1)} = \text{ReLU}(P h^{(l)} W)$ ($L=6$) | N/A (discrete) | Depth-bounded ($L=6$) |

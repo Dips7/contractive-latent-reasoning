@@ -55,9 +55,36 @@ Icon
 ~$*
 
 # Submission packages (retained locally for journal portal upload; excluded from reviewer repository)
-submission_package/
-submission_candidate/
-stability_investigation/submission_candidate/
-stability_investigation/manuscript/
+/submission_package/
+/submission_candidate/
+/stability_investigation/submission_candidate/
+/stability_investigation/manuscript/
+
+# Legacy project directories (preserved locally for baseline provenance; excluded from reviewer repository)
+/configs/
+/data/
+/docs/
+/experiments/
+/notebooks/
+/paper/
+/src/
+/tests/
+/IMPLEMENTATION_PLAN.md
+/pyproject.toml
+/archive/
+/audit/
+/external_validation/
+/formal_verification/
+/manuscript/
+/requirements-research.lock
+/results/
+/scripts/
+/theory/
+
+# Ignore loose root-level working documents (preserve README.md)
+/*.md
+!/README.md
+
+
 
 
